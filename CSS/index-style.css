@@ -1,0 +1,634 @@
+/*=================================================================
+                                FONTS
+=================================================================*/
+
+/*==  Lato  ==*/
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+/*==  Raleway  ==*/
+/* @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); */
+
+/*=================================================================
+                            VARIABLES
+=================================================================*/
+
+:root{
+    --first-typing-color: #FFF ;
+    --second-typing-color: #3A322F ;
+
+    --first-color: #0B80C9 ;
+    --second-color: #005a96 ;
+    
+}
+
+/*=================================================================
+                            GENERAL
+=================================================================*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    position: relative;
+    box-sizing: border-box;
+    font-family: "lato";
+    padding: 0;
+    margin: 0;
+    height: 10000px;
+}
+
+ul, li{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.container{
+    margin: auto;
+    width: 90%;
+    max-width: 1200px;
+}
+
+img{
+    width: auto;
+    max-width: 100%;
+}
+
+
+/*=================================================================
+                            PRELOAD
+=================================================================*/
+/* The Loader */
+.loader-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    overflow: hidden;
+  }
+  
+  .loader {
+    display: block;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    width: 150px;
+    height: 150px;
+    margin: -75px 0 0 -75px;
+    border-radius: 50%;
+    border: 10px solid transparent;
+    border-top-color: var(--second-color);
+    -webkit-animation: spin 1.7s linear infinite;
+            animation: spin 1.7s linear infinite;
+    z-index: 11;
+  }
+  .loader:before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    border-radius: 50%;
+    border: 10px solid transparent;
+    border-top-color: var(--first-color);
+    -webkit-animation: spin-reverse .6s linear infinite;
+            animation: spin-reverse .6s linear infinite;
+  }
+  .loader:after {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
+    border-radius: 50%;
+    border: 10px solid transparent;
+    border-top-color: var(--second-color);
+    -webkit-animation: spin 1s linear infinite;
+            animation: spin 1s linear infinite;
+  }
+  @keyframes spin {
+    0% {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes spin-reverse {
+    0% {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    100% {
+      -webkit-transform: rotate(-360deg);
+      transform: rotate(-360deg);
+    }
+  }
+  .loader-wrapper .loader-section {
+    position: fixed;
+    top: 0;
+    width: 51%;
+    height: 100%;
+    background: #222;
+    z-index: 10;
+  }
+  
+  .loader-wrapper .loader-section.section-left {
+    left: 0;
+  }
+  
+  .loader-wrapper .loader-section.section-right {
+    right: 0;
+  }
+  
+  /* Loaded styles */
+  .loaded .loader-wrapper .loader-section.section-left {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+    -webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  }
+  
+  .loaded .loader-wrapper .loader-section.section-right {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+    -webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  }
+  
+  .loaded .loader {
+    opacity: 0;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+  }
+  
+  .loaded .loader-wrapper {
+    visibility: hidden;
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+    -webkit-transition: all 0.3s 1s ease-out;
+    transition: all 0.3s 1s ease-out;
+  }
+
+/*=================================================================
+                            MENU
+=================================================================*/
+
+.menu{
+    background: linear-gradient(to top, rgb(32, 32, 32), rgba(10, 10, 10, 0.8)), url(../Images/menu-back.jpg),center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    padding: 10%;
+    position: fixed;
+    width: 100vw;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 5;
+    transform: translateX(-100%);
+    transition: transform 1s ease-in-out;
+    box-sizing: border-box;
+}
+
+.expanded{
+    transform: translateX(0%) !important;
+}
+
+
+.fa-times{
+    float: right;
+    font-size: 40px !important;
+    text-shadow: 1px 1px 5px black;
+    color: white;
+    cursor: pointer;
+}
+
+.menu-list{
+    padding: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.menu-link{
+    padding: 20px;
+    font-size: 36px;
+    text-transform: uppercase;
+    color: var(--first-typing-color);
+}
+
+.menu-item{
+    position: relative;
+}
+
+.menu-item::after{
+    position: absolute;
+    bottom: -20px;
+    content: "";
+    display: block;
+    width: 80%;
+    height: 3px;
+    background-color: var(--second-color);
+}
+
+  
+/*=================================================================
+                            NAVBAR
+=================================================================*/
+
+.navbar{
+    /* background: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)); */
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 30px 0;
+    min-width: 100%;
+    z-index: 1;
+    transition: background-color .3s ease-in-out;
+}
+
+.navbar-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.brand-link img{
+    min-width: 285px;
+    z-index: 3;
+}
+
+.nav-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.nav-item{
+    padding: 0 10px;
+
+}
+
+.nav-link{
+    color: var(--first-typing-color);
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 17px;
+    padding: 15px;
+    transition: color .5s ease-in-out ;
+
+}
+
+.nav-link:last-of-type{
+    padding-right: 0;
+}
+
+
+.nav-link:hover, .nav-link:active, .active{
+    color: var(--first-color);
+    text-shadow: 1px 1px 5px rgb(22, 22, 22);
+}
+
+.nav-transparent{
+    background-color: transparent !important;
+}
+
+.nav-colored{
+    padding: 15px 0;
+    position: fixed;
+    background: linear-gradient( rgb(20, 20, 20) 90%,  rgba(0, 0, 0, 0.685) 100% );
+    background-size: cover;
+}
+
+.fa-bars{
+    margin-left: -10%;
+    font-size: 40px;
+    color: var(--first-color);
+    cursor: pointer;
+    display: none !important;
+}
+
+/*=================================================================
+                            HERO
+=================================================================*/
+
+.hero{
+    padding: 60px 0;
+    background: linear-gradient(to top, black, rgba(0, 0, 0, .8)), url(../Images/train.jpg),center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+}
+
+.hero-container{
+    margin-top: 0;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 5%;
+}
+
+.hero-heading{
+    margin-top: 100px;
+
+}
+
+.hero-container .welcome{
+    color: var(--first-typing-color);
+    font-size: 30px;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 5px black;
+
+    
+}
+
+.hero-container h2{
+    word-wrap: none;
+    padding: 10PX 0;
+    font-size: 50px;
+    color: var(--first-typing-color);
+    font-weight: bold;
+    margin: 0 !important;
+    text-shadow: 1px 1px 5px black;
+
+}
+
+.hero-container span{
+    font-size: 50px;
+    color: var(--first-typing-color);
+    font-weight: 300;
+    margin: 0 !important;
+}
+
+.hero-container p{
+    color: var(--first-typing-color);
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.6;
+    text-shadow: 1px 1px 5px black;
+
+}
+
+.line{
+    width: 20%;
+    height: 3px;
+    margin: 20px 0;
+    background-color:var(--first-color) ;
+}
+
+.btn{
+    margin: 20px 0 90px 0;
+    font-size: 18px;
+    font-weight: 300;
+    color: var(--first-typing-color);
+    display: inline-block;
+    padding: 20px 40px;
+    background-color: var(--first-color);
+    transition: .5s ease-in-out;
+}
+
+.btn:hover{
+    background-color: var(--second-color);
+}
+
+.booking-form{
+    max-width: 100%;
+    margin: 100px -10% 50px 0px;
+    background-color: rgba(97, 97, 97, 0.103);
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.booking-form form label{
+    color: var(--first-typing-color);
+    font-weight: 300;
+    width: 100%;
+}
+
+.stations, .info{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-column-gap: 40px;
+    justify-content: start;
+}
+
+.depart, .arrival, .travelling-date, .class, .passengers{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.depart select, .arrival select, .class select, .passengers select{
+    margin: 12px 0;
+    padding: 7px;
+    color: var(--second-typing-color);
+    outline: none;
+}
+
+.date input{
+    margin: 12px 0;
+    padding: 7px;
+    color: var(--second-typing-color);
+    outline: none;
+}
+
+form input[type=Submit]{
+    margin: 50px 0 0px 0;
+    font-size: 18px;
+    font-weight: 300;
+    color: var(--first-typing-color);
+    display: inline-block;
+    padding: 20px 40px;
+    background-color: var(--first-color);
+    border: none;
+    transition: .5s ease-in-out;
+    cursor: pointer;
+}
+
+form input[type=submit]:hover{
+    background-color: var(--second-color);
+}
+
+
+.test{
+    width: 500px;
+    height: 500px;
+    background-color: var(--second-color);
+}
+
+/*=================================================================
+                        FEATURES
+=================================================================*/
+
+.features{
+    background-color: var(--first-color);
+    padding: 30px 0;
+    background: linear-gradient(to top, #0b80c9b0, #0b80c9b0), url(../Images/fea-back.jpg),center;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+.features-container{
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(3,1fr);
+    grid-row-gap: 15%;
+}
+
+.feature{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.feature:not(:last-of-type){
+    border-right: 1px solid #FFF;
+}
+
+.feature-img{
+    width: 100px;
+}
+
+.feature-info{
+    color: #FFF;
+}
+
+.feature-info span{
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.feature-info p{
+    padding: 10px 0;
+    font-size: 14px;
+}
+
+/*=================================================================
+                        SERVICES
+=================================================================*/
+
+.services{
+    width: 100%;
+    background: linear-gradient(to top, rgba(200, 200, 200, 0.5), rgba(200, 200, 200, 0.5)), url(../Images/back.png), center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 50px 0;
+}
+
+.services-container{
+    padding: 50px 0;
+    width: 100%;
+    height: 100%;
+}
+
+.services-heading{
+    color: var(--second-typing-color);
+    /* background-color: seagreen; */
+}
+
+.services-heading span{
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.services-heading h2{
+    font-size: 32px;
+    font-weight: 400;
+    padding: 20px 0;
+}
+
+/*=================================================================
+                        MEDIA QUERIES
+=================================================================*/
+
+@media(max-width:1024px){
+    
+    .nav-list{
+        display: none;
+    }
+
+    .hero-container{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-gap: 5%;
+    }
+
+    .stations, .info{
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .btn{
+        margin-bottom: 0;
+    }
+    
+    .booking-form{
+        margin-top: 20px;
+    }
+
+    .logo-with-name{
+        display: none !important;
+    }
+
+    .small-logo{
+        display: block !important;
+    }
+
+    .fa-bars{
+        display: block !important;
+    }
+
+    .features-container{
+        display: grid;
+        align-items: center;
+        grid-template-columns: repeat(1,1fr);
+        grid-gap: 5%;
+    }
+
+    .features{
+        padding-bottom: 70px;
+    }
+
+    .feature:not(:last-of-type){
+        border-right: none !important;
+    }
+    .feature:not(:last-of-type){
+        border-bottom: 1px solid #FFF;
+    }
+
+    
+}
+
+@media(min-width:1024px){
+.menu{
+    display: none !important;
+}
+}
+
+@media(max-width:768px){
+
+}
