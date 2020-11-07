@@ -5,16 +5,14 @@
 /*==  Lato  ==*/
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
-/*==  Raleway  ==*/
-/* @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); */
-
 /*=================================================================
                             VARIABLES
 =================================================================*/
 
 :root{
     --first-typing-color: #FFF ;
-    --second-typing-color: #3A322F ;
+    --second-typing-color: #333 ;
+    --third-typing-color: #005a96 ;
 
     --first-color: #0B80C9 ;
     --second-color: #005a96 ;
@@ -24,7 +22,8 @@
 /*=================================================================
                             GENERAL
 =================================================================*/
-*{
+
+*, *::before, *::after{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -38,8 +37,6 @@ body{
     position: relative;
     box-sizing: border-box;
     font-family: "lato";
-    padding: 0;
-    margin: 0;
     height: 10000px;
 }
 
@@ -66,7 +63,7 @@ img{
 /*=================================================================
                             PRELOAD
 =================================================================*/
-/* The Loader */
+
 .loader-wrapper {
     position: fixed;
     top: 0;
@@ -254,7 +251,6 @@ img{
 =================================================================*/
 
 .navbar{
-    /* background: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)); */
     position: absolute;
     top: 0;
     left: 0;
@@ -274,6 +270,7 @@ img{
 
 
 .brand-link img{
+    pointer-events: none;
     min-width: 285px;
     z-index: 3;
 }
@@ -484,7 +481,7 @@ form input[type=submit]:hover{
 
 .features{
     background-color: var(--first-color);
-    padding: 30px 0;
+    padding: 50px 0;
     background: linear-gradient(to top, #0b80c9b0, #0b80c9b0), url(../Images/fea-back.jpg),center;
     background-size: cover;
     background-attachment: fixed;
@@ -510,8 +507,10 @@ form input[type=submit]:hover{
     border-right: 1px solid #FFF;
 }
 
-.feature-img{
+.feature-img i{
     width: 100px;
+    font-size: 60px;
+    color: #FFF;
 }
 
 .feature-info{
@@ -534,7 +533,7 @@ form input[type=submit]:hover{
 
 .services{
     width: 100%;
-    background: linear-gradient(to top, rgba(200, 200, 200, 0.5), rgba(200, 200, 200, 0.5)), url(../Images/back.png), center no-repeat;
+    background: linear-gradient(to top, rgba(230, 230, 230, 0.5), rgba(230, 230, 230, 0.5)), url(../Images/back.png), center no-repeat;
     background-size: cover;
     background-attachment: fixed;
     padding: 50px 0;
@@ -560,6 +559,10 @@ form input[type=submit]:hover{
     font-size: 32px;
     font-weight: 400;
     padding: 20px 0;
+}
+
+.services-heading img{
+    pointer-events: none;
 }
 
 /*=================================================================
