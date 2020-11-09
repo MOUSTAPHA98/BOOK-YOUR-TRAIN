@@ -481,10 +481,10 @@ form input[type=submit]:hover{
 
 .features{
     background-color: var(--first-color);
-    padding: 50px 0;
+    padding: 70px 0;
     background: linear-gradient(to top, #0b80c9b0, #0b80c9b0), url(../Images/fea-back.jpg),center;
     background-size: cover;
-    /* background-attachment: fixed; */
+    background-attachment: fixed;
 
 }
 
@@ -534,7 +534,7 @@ form input[type=submit]:hover{
 .services{
     background: linear-gradient(to bottom, rgba(199, 199, 199, 0.5), rgba(46, 46, 46, 0.5)), url(../Images/back.png), center no-repeat;
     background-size: cover;
-    /* background-attachment: fixed; */
+    background-attachment: fixed;
     padding: 80px 0;
 }
 
@@ -579,8 +579,8 @@ form input[type=submit]:hover{
     flex-direction: row;
     align-items: center;
     background-color: rgba(255, 255, 255, 0.26);
-    border-top: 1px solid rgba(0, 0, 0, 0.2);
-    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
     padding:  0 15px;
 }
 
@@ -630,7 +630,7 @@ form input[type=submit]:hover{
 .destinations{
     background: linear-gradient(to bottom, #005a96e8, #003355e8), url(../Images/back.png), center no-repeat;
     background-size: cover;
-    /* background-attachment: fixed; */
+    background-attachment: fixed;
     padding: 80px 0;
 }
 
