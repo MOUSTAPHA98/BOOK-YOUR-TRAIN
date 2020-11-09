@@ -628,7 +628,7 @@ form input[type=submit]:hover{
 =================================================================*/
 
 .destinations{
-    background: linear-gradient(to bottom, #005a96e8, #003355e8), url(../Images/back.png), center no-repeat;
+    background: linear-gradient(to bottom, #005a96d5, #003355d5), url(../Images/back.png), center no-repeat;
     background-size: cover;
     background-attachment: fixed;
     padding: 80px 0;
