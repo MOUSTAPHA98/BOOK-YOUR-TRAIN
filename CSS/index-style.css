@@ -628,7 +628,7 @@ form input[type=submit]:hover{
 =================================================================*/
 
 .destinations{
-    background: linear-gradient(to top, #005a96e8, #005a96e8), url(../Images/back.png), center no-repeat;
+    background: linear-gradient(to bottom, #005a96e8, #003355e8), url(../Images/back.png), center no-repeat;
     background-size: cover;
     /* background-attachment: fixed; */
     padding: 80px 0;
@@ -647,7 +647,7 @@ form input[type=submit]:hover{
 
 .destinations-content{
     display: grid;
-    grid-gap: 30px;
+    grid-gap: 50px;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
 }
@@ -721,7 +721,9 @@ form input[type=submit]:hover{
 
 .travel-price span{
     font-size: 32px;
-    color: var(--first-color);
+    color: var(--third-typing-color);
+    font-weight: bold;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
 }
 
 
