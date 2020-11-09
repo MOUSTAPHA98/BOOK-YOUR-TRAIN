@@ -37,7 +37,7 @@ body{
     position: relative;
     box-sizing: border-box;
     font-family: "lato";
-    height: 10000px;
+    /* height: 10000px; */
 }
 
 ul, li{
@@ -484,7 +484,7 @@ form input[type=submit]:hover{
     padding: 50px 0;
     background: linear-gradient(to top, #0b80c9b0, #0b80c9b0), url(../Images/fea-back.jpg),center;
     background-size: cover;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
 
 }
 
@@ -532,21 +532,21 @@ form input[type=submit]:hover{
 =================================================================*/
 
 .services{
-    width: 100%;
-    background: linear-gradient(to top, rgba(222, 222, 222, 0.5), rgba(222, 222, 222, 0.5)), url(../Images/back.png), center no-repeat;
+    background: linear-gradient(to bottom, rgba(199, 199, 199, 0.5), rgba(46, 46, 46, 0.5)), url(../Images/back.png), center no-repeat;
     background-size: cover;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
     padding: 80px 0;
 }
 
 .services-container{
     display: grid;
-    gap: 5%;
+    grid-gap: 30px;
     grid-template-columns: repeat(3,1fr);
 }
 
 .services-heading{
     color: var(--second-typing-color);
+    padding-bottom: 50px;
 }
 
 .services-heading span{
@@ -566,11 +566,10 @@ form input[type=submit]:hover{
 }
 
 .services-content{
+    grid-gap: 30px;
     display: grid;
-    gap: 5%;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-column: 2/ 4;
+    grid-column: 2 / 4;
 
 
 }
@@ -597,7 +596,6 @@ form input[type=submit]:hover{
 
 .service-ico i{
     font-size: 40px;
-    margin-top: -50px;
 }
 
 .service-info{
@@ -623,6 +621,109 @@ form input[type=submit]:hover{
     color: var(--second-typing-color);
     line-height: 1.7;
 }
+
+
+/*=================================================================
+                        DESTINATIONS
+=================================================================*/
+
+.destinations{
+    background: linear-gradient(to top, #005a96e8, #005a96e8), url(../Images/back.png), center no-repeat;
+    background-size: cover;
+    /* background-attachment: fixed; */
+    padding: 80px 0;
+}
+
+.destinations-heading{
+    padding-bottom: 50px;
+}
+
+.destinations-heading h2{
+    font-size: 32px;
+    font-weight: 400;
+    color: var(--first-typing-color);
+    text-transform: uppercase;
+}
+
+.destinations-content{
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.destination-item{
+    background-color: var(--first-typing-color);
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.7);
+    border-bottom: rgba(51, 51, 51, 0.4) 1px solid;
+    cursor: pointer;
+
+}
+
+.dest-img{
+    background-color: rgb(10, 117, 131);
+    height: 260px;
+    background: linear-gradient(to top, #000000, #00000000), url(../Images/dest-1.jpg), center no-repeat;
+    background-size: cover;
+}
+
+.overlay{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #005a9698;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: none;
+}
+
+.destination-item:hover .overlay{
+    display: block;
+}
+
+.dest-info, .dest-stats{
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: rgba(51, 51, 51, 0.4) 1px solid;
+}
+
+.depart-dest span, .arrive-dest span{
+    font-size: 22px;
+    color: var(--third-typing-color);
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.depart-dest{
+    width: 50%;
+    border-right: rgba(51, 51, 51, 0.4) 1px solid;
+}
+
+.depart-dest p, .arrive-dest p{
+    font-size: 14px;
+    color: var(--second-typing-color);
+    text-transform: capitalize;
+    padding: 7px 0;
+}
+
+.travel-day, .travel-price{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    color: var(--second-typing-color);
+    text-transform: capitalize;
+}
+
+.travel-price span{
+    font-size: 32px;
+    color: var(--first-color);
+}
+
 
 /*=================================================================
                         MEDIA QUERIES
@@ -684,25 +785,28 @@ form input[type=submit]:hover{
 
     .services-container{
         display: grid;
-        gap: 5%;
+        gap: 0;
         grid-template-columns: repeat(1,1fr);
     }
 
     .services-content{
-        grid-column: 1 / 1;
-        grid-template-columns: repeat(1,1fr);
-    }
+        grid-column: 1/2;
+        grid-template-columns: repeat(1, 1fr);
 
-    .services-heading{
-        width: 100%;
-        text-align: center;
-        height: 100%;
     }
 
     .service-item{
         text-align: center;
         flex-direction: column;
         padding: 30px 0;
+    }
+
+
+    .destinations-content{
+        display: grid;
+        grid-gap: 50px;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, 1fr);
     }
 
 
