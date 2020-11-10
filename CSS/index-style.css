@@ -511,7 +511,7 @@ form input[type=submit]:hover{
 
 .features{
     background-color: var(--first-color);
-    padding: 70px 0;
+    padding: 50px 0;
     background: linear-gradient(to top,var(--second-color-transparent), var(--second-color-transparent)), url(../Images/fea-back.jpg),center;
     background-size: cover;
     background-attachment: fixed;
