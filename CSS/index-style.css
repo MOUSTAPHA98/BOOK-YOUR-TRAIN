@@ -11,11 +11,16 @@
 
 :root{
     --first-typing-color: #FFF ;
-    --second-typing-color: #333 ;
-    --third-typing-color: #005a96 ;
+    --second-typing-color: #111 ;
+    --third-typing-color: #044E65 ;
 
-    --first-color: #0B80C9 ;
-    --second-color: #005a96 ;
+    --first-color: #167188 ;
+    --second-color: #055E76 ;
+    --third-color: #044E65;
+    --first-color-transparent: #16718877;
+    --second-color-transparent: #055E76dd ;
+    --third-color-transparent: #044E65e7 ;
+
     
 }
 
@@ -30,7 +35,7 @@
   
   /* Track */
   ::-webkit-scrollbar-track {
-    background: rgb(25, 25, 25);
+    background: var(--second-typing-color);
   }
   
   /* Handle */
@@ -165,7 +170,7 @@ img{
     top: 0;
     width: 51%;
     height: 100%;
-    background: #222;
+    background: var(--second-typing-color);
     z-index: 10;
   }
   
@@ -336,7 +341,7 @@ img{
 .nav-colored{
     padding: 0;
     position: fixed;
-    background: linear-gradient( rgb(25, 25, 25) 90%,  rgb(25, 25, 25) 100% );
+    background: linear-gradient( var(--second-typing-color) 90%, var(--second-typing-color) 100% );
     background-size: cover;
     border-bottom: var(--second-color) 3px solid;
 }
@@ -506,9 +511,9 @@ form input[type=submit]:hover{
 .features{
     background-color: var(--first-color);
     padding: 70px 0;
-    background: linear-gradient(to top, #0b80c9b0, #0b80c9b0), url(../Images/fea-back.jpg),center;
+    background: linear-gradient(to top,var(--second-color-transparent), var(--second-color-transparent)), url(../Images/fea-back.jpg),center;
     background-size: cover;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
 
 }
 
@@ -528,17 +533,17 @@ form input[type=submit]:hover{
 }
 
 .feature:not(:last-of-type){
-    border-right: 1px solid #FFF;
+    border-right: 1px solid var(--first-typing-color);
 }
 
 .feature-img i{
     width: 100px;
     font-size: 60px;
-    color: #FFF;
+    color: var(--first-typing-color);
 }
 
 .feature-info{
-    color: #FFF;
+    color: var(--first-typing-color);
 }
 
 .feature-info span{
@@ -558,7 +563,7 @@ form input[type=submit]:hover{
 .services{
     background: linear-gradient(to bottom, rgba(225, 225, 225, 0.5), rgba(45, 45, 45, 0.5)), url(../Images/back.png), center no-repeat;
     background-size: cover;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
     padding: 80px 0;
 }
 
@@ -652,9 +657,9 @@ form input[type=submit]:hover{
 =================================================================*/
 
 .destinations{
-    background: linear-gradient(to bottom, #005a96d5, #003355d5), url(../Images/back.png), center no-repeat;
+    background: linear-gradient(to bottom, var(--third-color-transparent), var(--third-color-transparent)), url(../Images/back.png), center no-repeat;
     background-size: cover;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
     padding: 80px 0;
 }
 
@@ -695,7 +700,7 @@ form input[type=submit]:hover{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #005a9698;
+    background-color: var(--first-color-transparent);
     width: 100%;
     height: 100%;
     z-index: 1;
@@ -806,7 +811,7 @@ form input[type=submit]:hover{
         border-right: none !important;
     }
     .feature:not(:last-of-type){
-        border-bottom: 1px solid #FFF;
+        border-bottom: 1px solid var(--first-typing-color);
     }
 
     .services-container{
