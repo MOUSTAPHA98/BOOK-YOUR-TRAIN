@@ -523,23 +523,30 @@ form input[type=submit]:hover{
     display: grid;
     align-items: center;
     grid-template-columns: repeat(3,1fr);
-    grid-row-gap: 15%;
 }
 
 .feature{
     display: flex;
     flex-direction: row;
-    justify-content: center;
     align-items: center;
-    padding: 10px 0;
+
 }
 
 .feature:not(:last-of-type){
     border-right: 1px solid var(--first-typing-color);
 }
 
+.feature-img{
+    width: 50%;
+}
+
 .feature-img i{
-    width: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.feature-img i:before{
     font-size: 60px;
     color: var(--first-typing-color);
 }
@@ -825,8 +832,15 @@ form input[type=submit]:hover{
         grid-gap: 5%;
     }
 
-    .features{
-        padding-bottom: 70px;
+
+    .feature{
+        padding: 20px 0;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .feature-img{
+        padding: 15px 0;
     }
 
     .feature:not(:last-of-type){
