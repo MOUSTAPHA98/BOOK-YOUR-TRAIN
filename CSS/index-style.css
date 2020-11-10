@@ -52,6 +52,8 @@ a{
     margin: auto;
     width: 90%;
     max-width: 1200px;
+    overflow: hidden;
+    padding: 15px 0;
 }
 
 img{
@@ -310,7 +312,7 @@ img{
 }
 
 .nav-colored{
-    padding: 15px 0;
+    padding: 0;
     position: fixed;
     background: linear-gradient( rgb(25, 25, 25) 90%,  rgb(25, 25, 25) 100% );
     background-size: cover;
@@ -874,7 +876,7 @@ form input[type=submit]:hover{
 
 @keyframes fadedown{
     from{
-        transform: translateY(-5rem);
+        transform: translateY(-10rem);
     }
 
     to{
