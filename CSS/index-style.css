@@ -20,6 +20,28 @@
 }
 
 /*=================================================================
+                            SCROLL BAR
+=================================================================*/
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: rgb(25, 25, 25);
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: var(--first-color);
+    height: 10px;
+  }
+
+  
+
+/*=================================================================
                             GENERAL
 =================================================================*/
 
@@ -316,7 +338,7 @@ img{
     position: fixed;
     background: linear-gradient( rgb(25, 25, 25) 90%,  rgb(25, 25, 25) 100% );
     background-size: cover;
-    border-bottom: var(--second-color) 5px solid;
+    border-bottom: var(--second-color) 3px solid;
 }
 
 .fa-bars{
