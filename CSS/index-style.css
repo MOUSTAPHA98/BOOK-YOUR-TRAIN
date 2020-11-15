@@ -832,6 +832,19 @@ form input[type=submit]:hover{
         grid-gap: 5%;
     }
 
+    .hero-heading{
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-heading h2{
+        font-size: 65px;
+        text-align: center;
+    }
+
     .stations, .info{
         grid-template-columns: repeat(1,1fr);
     }
@@ -970,7 +983,7 @@ form input[type=submit]:hover{
 
 @keyframes fadedown{
     from{
-        transform: translateY(-10rem);
+        transform: translateY(-20rem);
     }
 
     to{
