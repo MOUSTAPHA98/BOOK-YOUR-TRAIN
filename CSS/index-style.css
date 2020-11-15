@@ -439,6 +439,7 @@ img{
 }
 
 .hero-container p{
+    padding: 25px 0;
     color: var(--first-typing-color);
     font-size: 18px;
     font-weight: 300;
@@ -455,7 +456,6 @@ img{
 }
 
 .btn{
-    margin: 20px 0 90px 0;
     font-size: 18px;
     font-weight: 300;
     color: var(--first-typing-color);
