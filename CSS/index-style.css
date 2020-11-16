@@ -378,9 +378,7 @@ img{
 .nav-colored{
     padding: 0; 
     position: fixed;
-    background: linear-gradient( rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.8) 100% ), url(../images/back-blue.svg)  center no-repeat;
-    background-size: cover;
-    transition: padding .3s ease-in-out;
+    background: linear-gradient( rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 100% ), url(../images/b-pattern.png);
 
 }
 
