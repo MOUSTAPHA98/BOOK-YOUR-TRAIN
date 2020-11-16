@@ -844,8 +844,12 @@ form input[type=submit]:hover{
     }
 
     .hero-heading h2{
-        /* font-size: 65px; */
+        font-size: 40px;
         text-align: center;
+    }
+
+    .hero-heading span{
+        font-size: 40px;
     }
 
     
