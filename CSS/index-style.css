@@ -215,7 +215,7 @@ img{
 =================================================================*/
 
 #myBtn {
-    z-index: 100;
+    z-index: 11;
     font-size: 25px;
     display: none; 
     position: fixed; 
@@ -255,7 +255,7 @@ img{
     overflow: hidden;
     left: 0;
     top: 0;
-    z-index: 5;
+    z-index: 11;
     transform: translateX(-100%);
     transition: transform 1s ease-in-out;
     box-sizing: border-box;
@@ -339,29 +339,32 @@ img{
     justify-content: space-between;
 }
 
-.nav-item{
-    padding: 0 10px;
-
-}
 
 .nav-link{
     color: var(--first-typing-color);
     text-transform: uppercase;
     font-weight: 700;
-    font-size: 17px;
-    padding: 15px;
-    transition: color .5s ease-in-out ;
+    font-size: 16px;
+    padding: 15px 25px;
+    transition: all .5s ease-in-out ;
 
 }
 
-.nav-link:last-of-type{
-    padding-right: 0;
-}
-
-
-.nav-link:hover, .nav-link:active, .active{
+.nav-link:hover{
+    background-color: var(--first-typing-color);
     color: var(--first-color);
-    text-shadow: 1px 1px 5px rgb(22, 22, 22);
+    border-radius: 5000px;
+}
+
+.active-lg{
+    color: var(--first-color);
+    border-radius: 5000px;
+    background-color: var(--first-color);
+    color: var(--first-typing-color);
+}
+.active-s{
+    color: var(--first-color);
+    text-shadow: 1px 1px 5px black;
 }
 
 .nav-transparent{
@@ -413,7 +416,7 @@ img{
 
 .hero-container .welcome{
     color: var(--first-typing-color);
-    font-size: 30px;
+    font-size: 25px;
     text-transform: uppercase;
     text-shadow: 1px 1px 5px black;
 
@@ -422,7 +425,7 @@ img{
 
 .hero-container h2{
     word-wrap: none;
-    padding: 10PX 0;
+    padding: 20px 0;
     font-size: 50px;
     color: var(--first-typing-color);
     font-weight: bold;
@@ -449,7 +452,7 @@ img{
 }
 
 .line{
-    width: 20%;
+    width: 30%;
     height: 3px;
     margin: 20px 0;
     background-color:var(--first-color) ;
@@ -841,9 +844,15 @@ form input[type=submit]:hover{
     }
 
     .hero-heading h2{
-        font-size: 65px;
+        /* font-size: 65px; */
         text-align: center;
     }
+
+    
+.hero-heading{
+    margin-top: 75px;
+
+}
 
     .stations, .info{
         grid-template-columns: repeat(1,1fr);
