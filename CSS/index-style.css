@@ -333,6 +333,10 @@ img{
     z-index: 3;
 }
 
+.nav-item{
+    margin-left: 5px;
+}
+
 .nav-list{
     display: flex;
     flex-wrap: wrap;
@@ -466,6 +470,21 @@ img{
     padding: 20px 40px;
     background-color: var(--first-color);
     transition: .5s ease-in-out;
+    border-radius: 100px;
+}
+
+.btn-mod{
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--first-color);
+    display: inline-block;
+    padding: 20px 50px;
+    transition: .5s ease-in-out;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 100px;
+    border: 4px solid var(--first-color);
+    box-shadow: 1px 1px 5px black;
+    cursor: pointer;
 }
 
 .btn:hover{
@@ -526,6 +545,7 @@ form input[type=Submit]{
     border: none;
     transition: .5s ease-in-out;
     cursor: pointer;
+    border-radius: 100px;
 }
 
 form input[type=submit]:hover{
@@ -728,7 +748,6 @@ form input[type=submit]:hover{
     background-color: var(--first-typing-color);
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.7);
     border-bottom: rgba(51, 51, 51, 0.4) 1px solid;
-    cursor: pointer;
 
 }
 
@@ -760,18 +779,18 @@ form input[type=submit]:hover{
 
 
 .overlay{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--first-color-transparent);
-    width: 100%;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+    background-color: rgba(255, 255, 255, 0.2);
     height: 100%;
     z-index: 1;
-    display: none;
+    display: none !important;
 }
 
 .destination-item:hover .overlay{
-    display: block;
+    display: grid !important;
 }
 
 .dest-info, .dest-stats{
