@@ -357,12 +357,12 @@ img{
 .nav-link:hover{
     background-color: var(--first-typing-color);
     color: var(--first-color);
-    border-radius: 5000px;
+    /* border-radius: 5000px; */
 }
 
 .active-lg{
     color: var(--first-color);
-    border-radius: 5000px;
+    /* border-radius: 5000px; */
     background-color: var(--first-color);
     color: var(--first-typing-color);
 }
@@ -378,9 +378,8 @@ img{
 .nav-colored{
     padding: 0; 
     position: fixed;
-    background: linear-gradient( var(--second-typing-color) 90%, var(--second-typing-color) 100% );
+    background: linear-gradient( rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.8) 100% ), url(../images/back-blue.svg)  center no-repeat;
     background-size: cover;
-    border-bottom: var(--second-color) 3px solid;
     transition: padding .3s ease-in-out;
 
 }
@@ -470,7 +469,8 @@ img{
     padding: 20px 40px;
     background-color: var(--first-color);
     transition: .5s ease-in-out;
-    border-radius: 100px;
+    /* border-radius: 100px; */
+    text-transform: capitalize;
 }
 
 .btn-mod{
@@ -481,9 +481,10 @@ img{
     padding: 20px 50px;
     transition: .5s ease-in-out;
     background-color: rgba(255, 255, 255, 0.7);
-    border-radius: 100px;
+    /* border-radius: 100px; */
     border: 4px solid var(--first-color);
     box-shadow: 1px 1px 5px black;
+    text-transform: capitalize;
     cursor: pointer;
 }
 
@@ -545,7 +546,8 @@ form input[type=Submit]{
     border: none;
     transition: .5s ease-in-out;
     cursor: pointer;
-    border-radius: 100px;
+    /* border-radius: 100px; */
+    text-transform: capitalize;
 }
 
 form input[type=submit]:hover{
@@ -624,7 +626,7 @@ form input[type=submit]:hover{
 =================================================================*/
 
 .services{
-    background: linear-gradient(to bottom, rgba(225, 225, 225, 0.5), rgba(45, 45, 45, 0.5)), url(../images/back-w.png), center no-repeat;
+    background: linear-gradient(to bottom, rgba(225, 225, 225, 0.8), rgba(45, 45, 45, 0.8)), url(../images/back-w.svg), center no-repeat;
     background-size: cover;
     background-attachment: fixed;
     padding: 80px 0;
@@ -670,7 +672,7 @@ form input[type=submit]:hover{
     display: flex;
     flex-direction: row;
     align-items: center;
-    background-color: rgba(255, 255, 255, 0.26);
+    background-color: rgba(255, 255, 255, 0.35);
     border-top: 1px solid rgba(0, 0, 0, 0.3);
     border-bottom: 1px solid rgba(0, 0, 0, 0.3);
     padding:  0 15px;
@@ -720,7 +722,7 @@ form input[type=submit]:hover{
 =================================================================*/
 
 .destinations{
-    background: linear-gradient(to bottom, var(--third-color-transparent), var(--third-color-transparent)), url(../images/back-b.png), center no-repeat;
+    background: linear-gradient(to bottom, var(--third-color-transparent), var(--third-color-transparent)), url(../images/back-b.svg), center no-repeat;
     background-size: cover;
     background-attachment: fixed;
     padding: 80px 0;
