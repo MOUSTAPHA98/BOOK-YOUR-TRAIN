@@ -848,6 +848,10 @@ form input[type=submit]:hover{
         display: none;
     }
 
+    .nav-colored{
+        padding: 10px 0; 
+    }
+
     .hero-container{
         display: grid;
         grid-template-columns: repeat(1,1fr);
