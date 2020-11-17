@@ -560,7 +560,7 @@ form input[type=submit]:hover{
 
 .features{
     background-color: var(--first-color);
-    padding: 50px 0;
+    padding: 65px 0;
     background: linear-gradient(to top,var(--second-color-transparent), var(--second-color-transparent)), url(../images/fea-back.jpg),center;
     background-size: cover;
     /* background-attachment: fixed; */
@@ -619,7 +619,7 @@ form input[type=submit]:hover{
 =================================================================*/
 
 .services{
-    background: linear-gradient(to bottom, rgba(225, 225, 225, 0.8), rgba(45, 45, 45, 0.8)), url(../images/back-w.svg), center no-repeat;
+    background: linear-gradient(to bottom, rgba(225, 225, 225, 0.8), rgba(80, 80, 80, 0.8)), url(../images/back-w.svg), center no-repeat;
     background-size: cover;
     /* background-attachment: fixed; */
     padding: 80px 0;
@@ -842,17 +842,27 @@ form input[type=submit]:hover{
     .nav-list{
         display: none;
     }
-
     .nav-colored{
         padding: 10px 0; 
     }
-
     .hero-container{
         display: grid;
         grid-template-columns: repeat(1,1fr);
         grid-gap: 5%;
     }
+    .hero-container h2{
+        font-size: 50px;
+        font-weight: 400;
 
+    
+    }
+    .hero-container span{
+        font-size: 50px;
+        font-weight: 400;
+    }
+    .welcome{
+        font-weight: 300 !important;
+    }
     .hero-heading{
         text-align: center;
         display: flex;
@@ -860,119 +870,87 @@ form input[type=submit]:hover{
         flex-direction: column;
         align-items: center;
     }
-
-    .hero-heading h2{
-        font-size: 50px;
-        text-align: center;
-    }
-
-    .hero-heading span{
-        font-size: 50px;
-    }
-
-    
-.hero-heading{
+    .hero-heading{
     margin-top: 75px;
-
-}
-
+    }
     .stations, .info{
         grid-template-columns: repeat(1,1fr);
     }
-
     .btn{
         margin-bottom: 0;
     }
-    
     .booking-form{
         margin-top: 20px;
+        text-align: center;
     }
-
+    .booking-form label{
+        text-align: left;
+    }
     .logo-with-name{
         display: none !important;
     }
-
     .small-logo{
         display: block !important;
     }
-
     .fa-bars{
         display: block !important;
     }
-
     .features-container{
         display: grid;
         align-items: center;
         grid-template-columns: repeat(1,1fr);
         grid-gap: 5%;
     }
-
-
     .feature{
         padding: 20px 0;
         flex-direction: column;
         text-align: center;
     }
-
     .feature-img{
         padding: 15px 0;
     }
-
     .feature:not(:last-of-type){
         border-right: none !important;
     }
     .feature:not(:last-of-type){
         border-bottom: 1px solid var(--first-typing-color);
     }
-
     .services-container{
         display: grid;
         gap: 0;
         grid-template-columns: repeat(1,1fr);
     }
-
     .services-content{
         grid-column: 1/2;
         grid-template-columns: repeat(1, 1fr);
 
     }
-
     .services-heading{
         text-align: center;
     }
-
     .service-item{
         text-align: center;
         flex-direction: column;
         padding: 30px 0;
     }
-
     .destinations-heading{
         text-align: center;
     }
-
-
     .destinations-content{
         display: grid;
         grid-gap: 50px;
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(1, 1fr);
-    }
-
-
-    
+    }   
 }
 
+
 @media(min-width:1024px){
-.menu{
+
+    .menu{
     display: none !important;
 }
 }
-
-@media(max-width:768px){
-
-}
-
 
 /*=================================================================
                         ANIMATIONS
