@@ -1,16 +1,22 @@
 var myNav = document.getElementById('mynav'),
-    mybutton = document.getElementById("myBtn");
+    mybutton = document.getElementById("myBtn"),
+    modeBtn = document.querySelector(".colors");
+    
 
 window.onscroll = function () { 
     "use strict";
     if (document.body.scrollTop >= 700 || document.documentElement.scrollTop >= 700 )
     {
         myNav.classList.add("nav-colored");
-        myNav.classList.remove("nav-transparent");
+        modeBtn.style.display = "none";
+         myNav.classList.remove("nav-transparent");
+        modeBtn.style.display = "none";
+
     } 
     else {
         myNav.classList.add("nav-transparent");
         myNav.classList.remove("nav-colored");
+        modeBtn.style.display = "block";
     }
     
     if (document.body.scrollTop >= 200 || document.documentElement.scrollTop >= 200) {
@@ -49,8 +55,7 @@ var menuCloseBtn = document.getElementById("fa-times");
 
 
 
-var modeBtn = document.querySelector(".colors"),
-    settings = document.querySelector(".settings"),
+var settings = document.querySelector(".settings"),
     blueBtn = document.querySelector(".blue"),
     redBtn = document.querySelector(".red");
     modeBtn.onclick = function(){
