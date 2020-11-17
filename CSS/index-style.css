@@ -988,7 +988,16 @@ form input[type=submit]:hover{
         grid-gap: 50px;
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(1, 1fr);
-    }   
+    }
+    .settings{
+        position: absolute;
+        left: 0;
+        top: 50%;
+        z-index: 10000;
+        transform: translateX(-60px);
+        transition: ease-in-out .5s;
+    }
+    
 }
 
 
