@@ -81,7 +81,7 @@
 }
 
 .colors{
-    background-color: blanchedalmond;
+    background-color: var(--first-typing-color);
     position: relative;
     display: flex;
     flex-direction: column;
@@ -92,7 +92,7 @@
 
 .colors:after{
     color: var(--third-color);
-    background-color: blanchedalmond;
+    background-color: var(--first-typing-color);
     display: flex;
     justify-content: center;
     align-items: center;
