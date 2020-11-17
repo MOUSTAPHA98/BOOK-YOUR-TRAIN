@@ -49,4 +49,23 @@ var menuCloseBtn = document.getElementById("fa-times");
 
 
 
+var modeBtn = document.querySelector(".colors"),
+    settings = document.querySelector(".settings"),
+    darkBtn = document.querySelector(".dark"),
+    lightBtn = document.querySelector(".light");
+    modeBtn.onclick = function(){
+        "use strict";
+        settings.classList.toggle("expanded");
+    }
 
+darkBtn.onclick = function(){
+    "use strict";
+    document.body.classList.remove("light-mod")
+    document.body.classList.add("dark-mod")
+}
+
+lightBtn.onclick = function(){
+    "use strict";
+    document.body.classList.remove("dark-mod")
+    document.body.classList.add("light-mod")
+}

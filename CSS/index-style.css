@@ -20,8 +20,6 @@
     --first-color-transparent: #00678D70;
     --second-color-transparent: #00587Cd0 ;
     --third-color-transparent: #004A6Be0 ;
-
-    
 }
 
 /*=================================================================
@@ -44,7 +42,62 @@
     height: 10px;
   }
 
-  
+/*=================================================================
+                           SETTINGS
+=================================================================*/
+
+.settings{
+    position: fixed;
+    left: 0;
+    top: 29%;
+    z-index: 10000;
+    transform: translateX(-60px);
+    transition: ease-in-out .5s;
+}
+
+.colors{
+    background-color: blanchedalmond;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 7px;
+}
+
+.colors:after{
+    color: var(--third-color);
+    background-color: blanchedalmond;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    right: -40px;
+    width: 40px;
+    height: 40px;
+    font-family: "Font Awesome 5 Pro";
+    content: "\f013";
+    font-weight: 900;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.dark, .light{
+    margin: 5px;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+}
+
+.dark{
+    background-color: var(--second-typing-color);
+}
+
+.light{
+    background-color: rgb(196, 196, 196);
+}
 
 /*=================================================================
                             GENERAL
