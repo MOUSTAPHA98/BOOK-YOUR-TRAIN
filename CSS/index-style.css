@@ -56,7 +56,7 @@
 }
 
 .colors{
-    background-color: blanchedalmond;
+    background-color: var(--first-typing-color);
     position: relative;
     display: flex;
     flex-direction: column;
