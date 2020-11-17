@@ -850,6 +850,7 @@ form input[type=submit]:hover{
     background-color: var(--first-typing-color);
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.7);
     border-bottom: rgba(51, 51, 51, 0.4) 1px solid;
+    border-radius: 10px;
 
 }
 
@@ -860,6 +861,7 @@ form input[type=submit]:hover{
     height: 300px;
     background: linear-gradient(to top, #000000, #00000000), url(../images/destinations/dest-1.jpg), center no-repeat;
     background-size: cover !important;
+
 }
 
 .destination-item:nth-of-type(2) .dest-img{
