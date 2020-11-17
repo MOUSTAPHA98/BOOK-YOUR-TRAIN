@@ -51,14 +51,14 @@
 .green-mod{
     --first-typing-color: #FFF ;
     --second-typing-color: #111 ;
-    --third-typing-color: #00401E ;
+    --third-typing-color: #272F19 ;
 
-    --first-color: #196342 ;
-    --second-color: #024E28 ;
-    --third-color: #00401E;
-    --first-color-transparent: #19634270;
-    --second-color-transparent: #024E28d0 ;
-    --third-color-transparent: #00401Ee0 ;
+    --first-color: #41492F ;
+    --second-color: #313922 ;
+    --third-color: #272F19;
+    --first-color-transparent: 41492F70;
+    --second-color-transparent: #313922d0 ;
+    --third-color-transparent: #272F19e0 ;
 }
 
 .gray-mod{
@@ -151,11 +151,11 @@
 }
 
 .green{
-    background-color: green;
+    background-color: #272F19;
 }
 
 .gray{
-    background-color: gray;
+    background-color: #151821;
 }
 
 /*=================================================================
