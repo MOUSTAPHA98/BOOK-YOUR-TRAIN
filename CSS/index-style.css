@@ -1014,7 +1014,7 @@ form input[type=submit]:hover{
 
 @keyframes fadedown{
     from{
-        transform: translateY(-20rem);
+        transform: translateY(-10rem);
     }
 
     to{
