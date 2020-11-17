@@ -101,7 +101,7 @@
     position: fixed;
     left: 0;
     top: 50%;
-    z-index: 10;
+    z-index: 10000;
     transform: translateX(-55px);
     transition: ease-in-out .7s;
 }
@@ -211,7 +211,7 @@ img{
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: 1111;
+    z-index: 101;
     overflow: hidden;
   }
   
@@ -367,7 +367,7 @@ img{
     overflow: hidden;
     left: 0;
     top: 0;
-    z-index: 12;
+    z-index: 11;
     transform: translateX(-100%);
     transition: transform 1s ease-in-out;
     box-sizing: border-box;
