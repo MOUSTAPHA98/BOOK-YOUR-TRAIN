@@ -104,7 +104,7 @@
     font-family: "Font Awesome 5 Pro";
     content: "\f013";
     font-weight: 900;
-    box-shadow: 2px 2px 5px var(--second-typing-color);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.507);
     font-size: 20px;
     cursor: pointer;
 }
