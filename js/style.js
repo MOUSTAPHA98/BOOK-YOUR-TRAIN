@@ -37,7 +37,8 @@ function topFunction() {
 
 
 
-/* MENU */
+/*   =====   MENU FOR SMALL SCREEN   =====   */
+
 /* OPEN */
 var menuOpenBtn = document.getElementById("fa-bars"),
     menu = document.getElementById("menu");
@@ -45,15 +46,23 @@ var menuOpenBtn = document.getElementById("fa-bars"),
             "use strict";
             menu.classList.add("expanded")
         }
+
 /* CLOSE */
 var menuCloseBtn = document.getElementById("fa-times");
         menuCloseBtn.onclick = function(){
             "use strict";
             menu.classList.remove("expanded")
         };
+        
+/*
+*
+*
+*
+*
+*
+*/
 
-
-
+/*   =====   CHANGE COLORS   =====   */
 
 var settings = document.querySelector(".settings"),
     blueBtn = document.querySelector(".blue"),
