@@ -907,8 +907,6 @@ form input[type=submit]:hover{
     }
     .feature:not(:last-of-type){
         border-right: none !important;
-    }
-    .feature:not(:last-of-type){
         border-bottom: 1px solid var(--first-typing-color);
     }
     .services-container{
