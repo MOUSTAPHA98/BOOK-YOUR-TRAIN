@@ -22,7 +22,7 @@
     --third-color-transparent: #004A6Be0 ;
 }
 
-.dark-mod{
+.blue-mod{
     --first-typing-color: #FFF ;
     --second-typing-color: #111 ;
     --third-typing-color: #004A6B ;
@@ -34,8 +34,7 @@
     --second-color-transparent: #00587Cd0 ;
     --third-color-transparent: #004A6Be0 ;
 }
-
-.light-mod{
+.red-mod{
     --first-typing-color: #FFF ;
     --second-typing-color: #111 ;
     --third-typing-color: #6b0000 ;
@@ -47,8 +46,6 @@
     --second-color-transparent: #7c0000d0 ;
     --third-color-transparent: #6b0000e0 ;
 }
-
-
 /*=================================================================
                             SCROLL BAR
 =================================================================*/
@@ -77,13 +74,14 @@
     position: fixed;
     left: 0;
     top: 50%;
-    z-index: 10;
+    box-shadow: 2px 2px 5px var(--second-typing-color);
+    z-index: 11;
     transform: translateX(-60px);
-    transition: ease-in-out .5s;
+    transition: ease-in-out .7s;
 }
 
 .colors{
-    background-color: var(--first-typing-color);
+    background-color: blanchedalmond;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -94,37 +92,38 @@
 
 .colors:after{
     color: var(--third-color);
-    background-color: var(--first-typing-color);
+    background-color: blanchedalmond;
     display: flex;
     justify-content: center;
     align-items: center;
     position: absolute;
     top: 0;
-    right: -40px;
+    right: -41px;
     width: 40px;
     height: 40px;
     font-family: "Font Awesome 5 Pro";
     content: "\f013";
     font-weight: 900;
+    box-shadow: 2px 2px 5px var(--second-typing-color);
     font-size: 20px;
     cursor: pointer;
-    box-shadow: 1px 1px 5px black;
 }
 
-.dark, .light{
+.blue, .red{
     margin: 5px;
     border-radius: 50%;
     width: 35px;
     height: 35px;
+    box-shadow: 2px 2px 5px var(--second-typing-color);
     cursor: pointer;
 }
 
-.dark{
+.blue{
     background-color: #00678D;
 }
 
-.light{
-    background-color: #8d0000 ;
+.red{
+    background-color: #8d0000;
 }
 
 /*=================================================================
@@ -1015,7 +1014,7 @@ form input[type=submit]:hover{
         grid-gap: 50px;
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(1, 1fr);
-    }
+    }   
 }
 
 
