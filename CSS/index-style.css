@@ -22,30 +22,6 @@
     --third-color-transparent: #004A6Be0 ;
 }
 
-.blue-mod{
-    --first-typing-color: #FFF ;
-    --second-typing-color: #111 ;
-    --third-typing-color: #004A6B ;
-
-    --first-color: #00678D ;
-    --second-color: #00587C ;
-    --third-color: #004A6B;
-    --first-color-transparent: #00678D70;
-    --second-color-transparent: #00587Cd0 ;
-    --third-color-transparent: #004A6Be0 ;
-}
-.red-mod{
-    --first-typing-color: #FFF ;
-    --second-typing-color: #111 ;
-    --third-typing-color: #6b0000 ;
-
-    --first-color: #8d0000 ;
-    --second-color: #7c0000 ;
-    --third-color: #6b0000;
-    --first-color-transparent: #8d000070;
-    --second-color-transparent: #7c0000d0 ;
-    --third-color-transparent: #6b0000e0 ;
-}
 /*=================================================================
                             SCROLL BAR
 =================================================================*/
@@ -74,9 +50,8 @@
     position: fixed;
     left: 0;
     top: 50%;
-    box-shadow: 2px 2px 5px var(--second-typing-color);
-    z-index: 11;
-    transform: translateX(-60px);
+    z-index: 10000;
+    transform: translateX(-55px);
     transition: ease-in-out .7s;
 }
 
@@ -98,13 +73,12 @@
     align-items: center;
     position: absolute;
     top: 0;
-    right: -41px;
+    right: -40px;
     width: 40px;
     height: 40px;
     font-family: "Font Awesome 5 Pro";
     content: "\f013";
     font-weight: 900;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.507);
     font-size: 20px;
     cursor: pointer;
 }
@@ -112,18 +86,17 @@
 .blue, .red{
     margin: 5px;
     border-radius: 50%;
-    width: 35px;
-    height: 35px;
-    box-shadow: 2px 2px 5px var(--second-typing-color);
+    width: 30px;
+    height: 30px;
     cursor: pointer;
 }
 
 .blue{
-    background-color: #00678D;
+    background-color: var(--second-typing-color);
 }
 
 .red{
-    background-color: #8d0000;
+    background-color: rgb(196, 196, 196);
 }
 
 /*=================================================================
