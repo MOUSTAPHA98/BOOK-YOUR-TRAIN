@@ -57,7 +57,9 @@ var menuCloseBtn = document.getElementById("fa-times");
 
 var settings = document.querySelector(".settings"),
     blueBtn = document.querySelector(".blue"),
-    redBtn = document.querySelector(".red");
+    redBtn = document.querySelector(".red"),
+    greenBtn = document.querySelector(".green"),
+    grayBtn = document.querySelector(".gray");
     modeBtn.onclick = function(){
         "use strict";
         settings.classList.toggle("expanded");
@@ -65,12 +67,24 @@ var settings = document.querySelector(".settings"),
 
 blueBtn.onclick = function(){
     "use strict";
-    document.body.classList.remove("red-mod")
+    document.body.classList.remove("red-mod", "green-mod", "gray-mod")
     document.body.classList.add("blue-mod")
 }
 
 redBtn.onclick = function(){
     "use strict";
-    document.body.classList.remove("blue-mod")
+    document.body.classList.remove("blue-mod", "green-mod", "gray-mod")
     document.body.classList.add("red-mod")
+}
+
+greenBtn.onclick = function(){
+    "use strict";
+    document.body.classList.remove("red-mod", "blue-mod", "gray-mod")
+    document.body.classList.add("green-mod")
+}
+
+grayBtn.onclick = function(){
+    "use strict";
+    document.body.classList.remove("blue-mod", "red-mod", "green-mod")
+    document.body.classList.add("gray-mod")
 }
