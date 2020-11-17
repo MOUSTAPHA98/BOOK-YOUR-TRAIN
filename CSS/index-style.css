@@ -38,14 +38,14 @@
 .red-mod{
     --first-typing-color: #FFF ;
     --second-typing-color: #111 ;
-    --third-typing-color: #A7040B ;
+    --third-typing-color: #830209 ;
 
-    --first-color: #D91520 ;
-    --second-color: #C0050E ;
-    --third-color: #A7040B;
-    --first-color-transparent: #D9152070;
-    --second-color-transparent: #C0050Ed0 ;
-    --third-color-transparent: #A7040Be0 ;
+    --first-color: #830209 ;
+    --second-color: #95020B ;
+    --third-color: #830209;
+    --first-color-transparent: #83020970;
+    --second-color-transparent: #95020Bd0 ;
+    --third-color-transparent: #830209e0 ;
 }
 
 .green-mod{
@@ -147,7 +147,7 @@
 }
 
 .red{
-    background-color: #A7040B;
+    background-color: #830209;
 }
 
 .green{
