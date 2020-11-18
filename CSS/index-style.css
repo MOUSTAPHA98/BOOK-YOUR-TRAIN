@@ -183,7 +183,6 @@ body{
     position: relative;
     box-sizing: border-box;
     font-family: "lato";
-    overflow-x: hidden;
 }
 
 ul, li{
@@ -665,11 +664,11 @@ form input[type=submit]:hover{
 }
 
 
-.test{
+/* .test{
     width: 500px;
     height: 500px;
     background-color: var(--second-color);
-}
+} */
 
 /*=================================================================
                         FEATURES
@@ -754,12 +753,15 @@ form input[type=submit]:hover{
 .services-heading span{
     font-size: 16px;
     font-weight: 400;
+    color: var(--second-typing-color);
 }
 
 .services-heading h2{
     font-size: 32px;
     font-weight: 400;
     padding: 20px 0;
+    color: var(--second-typing-color);
+
 }
 
 .services-heading img{
@@ -1216,7 +1218,7 @@ form input[type=submit]:hover{
 
 .testimonials{
     padding: 80px 0;
-    background: linear-gradient(to bottom, rgba(225, 225, 225, 0.7), rgba(80, 80, 80, 0.7)), url(../images/back-w.svg), center no-repeat;
+    background: linear-gradient(to bottom, rgba(225, 225, 225, 0.8), rgba(80, 80, 80, .8)), url(../images/back-w.svg), center no-repeat;
     background-size: cover;
 }
 
@@ -1230,33 +1232,151 @@ form input[type=submit]:hover{
     padding-bottom: 40px;
 }
 
-.testimonials-heading h2{
+
+.testimonials-heading span{
+    font-size: 16px;
+    font-weight: 400;
     color: var(--second-typing-color);
-    color: trgb(255, 252, 251);
+}
+
+.testimonials-heading h2{
     font-size: 32px;
     font-weight: 400;
-
+    padding: 20px 0;
+    color:var(--second-typing-color);
+    
 }
+
+.testimonials-content{
+    border-radius: 25px;
+    overflow: hidden;
+}
+
 
 .swiper-slide {
     width: 100%;
-    min-height: 400px;
-    background-color: black;
+    height: 350px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-radius: 25px;
+    overflow: hidden;
+    margin: 0 50px;
 }
 
 .swiper-wrapper{
     width: 100%;
-    background-color: sienna;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
 
-/* .swiper-container-3d .swiper-slide-shadow-left,
+.swiper-container-3d .swiper-slide-shadow-left,
 .swiper-container-3d .swiper-slide-shadow-right{
     background-image: none;
-} */
+    /* background: linear-gradient(to right, rgba(0, 0, 0, 0.6), transparent); */
+
+}
+
+.quote{
+    background: linear-gradient(to bottom, rgba(225, 225, 225, 0.6), rgba(29, 29, 29, 0.8)), url(../images/back-w.svg), center no-repeat;
+    background-size: cover;
+    width: 35%;
+    height: 100% !important;
+    background-color: var(--first-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.quote i{
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 175px;
+}
+
+.client-img{
+    position: absolute;
+    left: -22%;
+    top: 22%;
+    height: 200px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 5px solid white;
+}
+
+.client-review{
+    width: 60%;
+    height: 100%;
+    position: relative;
+    padding: 60px;
+}
+
+.client-reviw-text-content{
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.top-right, .bottom-left{
+    position: absolute;
+    color: var(--third-color);
+    font-size: 50px;
+    padding: 35px;
+
+}
+
+.top-right{
+    top: 0;
+    right: 0;
+    transform: rotate(180deg);
+}
+
+.bottom-left{
+    bottom: 0;
+    left: 0;
+
+}
+
+.review-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.review-text p{
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--second-typing-color);
+    padding: 15px 0;
+}
+
+.client-info{
+    text-align: right;
+}
+
+.client-info p{
+    font-size: 26px;
+    padding: 5px 0;
+    color: var(--third-color);
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.client-info span{
+    color: var(--fourth-typing-color);
+}
 
 /*=================================================================
                         MEDIA QUERIES
@@ -1401,6 +1521,42 @@ form input[type=submit]:hover{
         grid-template-columns: repeat(1, 1fr);
         grid-gap: 50px;
     }
+
+    .swiper-slide {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .quote{
+        width: 100%;
+    }
+
+    .swiper-slide{
+        height: auto;
+    }
+
+    .client-review{
+        width: 100%;
+        padding: 90px 0;
+        text-align: center;
+    }
+
+    .client-img{
+        margin-left: 10%;
+        height: 150px;
+        width: 150px;
+        left: 0;
+        top: 0;
+        transform: translateY(-50%);
+    }
+
+    .client-info{
+        text-align: center;
+    }
+
+
     
     
 }
