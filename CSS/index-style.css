@@ -981,10 +981,11 @@ form input[type=submit]:hover{
 .post-img{
     background: linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.9)), url(../images/destinations/dest-1.jpg), center no-repeat;
     background-size: cover !important;
+    transition: all 1.5s;
+
 }
 
 .post:hover .post-img{
-    transition: all 1s;
     transform: scale(1.2);
 }
 
