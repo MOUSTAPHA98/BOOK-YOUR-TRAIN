@@ -104,7 +104,7 @@
     left: 0;
     top: 50%;
     z-index: 10;
-    transform: translateX(-55px);
+    transform: translateX(-45px);
     transition: ease-in-out .7s;
 }
 
@@ -115,7 +115,8 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    padding: 7px;
+    padding: 7px 2px;
+
 }
 
 .colors:after{
@@ -138,7 +139,6 @@
 
 .blue, .red, .green, .gray{
     margin: 5px;
-    border-radius: 50%;
     width: 30px;
     height: 30px;
     cursor: pointer;
@@ -192,7 +192,7 @@ a{
 .container{
     margin: auto;
     width: 90%;
-    max-width: 1200px;
+    max-width: 1100px;
     overflow: hidden;
     padding: 15px 0;
 }
@@ -1083,12 +1083,22 @@ form input[type=submit]:hover{
 
 }
 
+/*=================================================================
+                        E-TICKETS ADV
+=================================================================*/
+
+.e-tickets{
+    padding: 80px 0;
+    background: linear-gradient(to bottom, var(--third-color-transparent), var(--third-color-transparent)), url(../images/b-pattern.png), center no-repeat;
+}
+
+
 
 /*=================================================================
                         MEDIA QUERIES
 =================================================================*/
 
-@media(max-width:1024px){
+@media(max-width:1023px){
     
     .nav-list{
         display: none;
@@ -1274,5 +1284,14 @@ form input[type=submit]:hover{
     to{
         opacity: 1;
         transform: translatey(0rem);
+    }
+}
+
+@keyframes rotate{
+    from{
+        transform: rotate(0);
+    }
+    to{
+        transform: rotate(360deg);
     }
 }
