@@ -79,25 +79,31 @@ blueBtn.onclick = function(){
     "use strict";
     document.body.classList.remove("red-mod", "green-mod", "gray-mod");
     document.body.classList.add("blue-mod");
-    metaThemeColor.setAttribute("content","#000");
+    metaThemeColor.setAttribute("content","#004A6B");
 }
 
 redBtn.onclick = function(){
     "use strict";
-    document.body.classList.remove("blue-mod", "green-mod", "gray-mod")
-    document.body.classList.add("red-mod")
+    document.body.classList.remove("blue-mod", "green-mod", "gray-mod");
+    document.body.classList.add("red-mod");
+    metaThemeColor.setAttribute("content","#830209");
+
 }
 
 greenBtn.onclick = function(){
     "use strict";
-    document.body.classList.remove("red-mod", "blue-mod", "gray-mod")
-    document.body.classList.add("green-mod")
+    document.body.classList.remove("red-mod", "blue-mod", "gray-mod");
+    document.body.classList.add("green-mod");
+    metaThemeColor.setAttribute("content","#272F19");
+
 }
 
 grayBtn.onclick = function(){
     "use strict";
-    document.body.classList.remove("blue-mod", "red-mod", "green-mod")
-    document.body.classList.add("gray-mod")
+    document.body.classList.remove("blue-mod", "red-mod", "green-mod");
+    document.body.classList.add("gray-mod");
+    metaThemeColor.setAttribute("content","#151821");
+
 }
 
 
