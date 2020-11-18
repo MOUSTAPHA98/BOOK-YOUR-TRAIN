@@ -865,26 +865,26 @@ form input[type=submit]:hover{
 .destination-item .dest-img{
     background-color: rgb(10, 117, 131);
     height: 300px;
-    background: linear-gradient(to top, #000000, #00000000), url(../images/destinations/dest-1.jpg), center no-repeat;
+    background: linear-gradient(to top, #000000, #00000000), url(../images/destinations/dest.jpg), center no-repeat;
     background-size: cover !important;
 
 }
 
 .destination-item:nth-of-type(2) .dest-img{
-    background: linear-gradient(to top, #000000, #00000000), url(../images/destinations/dest-2.jpg), center no-repeat;
+    background: linear-gradient(to top, #000000, #00000000), url(../images/destinations/dest.jpg), center no-repeat;
 }
 
 .destination-item:nth-of-type(3) .dest-img{
-    background: linear-gradient(to top, #000000, #00000000), url(../images/destinations/dest-3.jpg), center no-repeat;
+    background: linear-gradient(to top, #000000, #00000000), url(../images/destinations/dest.jpg), center no-repeat;
 }
 .destination-item:nth-of-type(4) .dest-img{
-    background: linear-gradient(to top, #000000, #00000000), url(../images/destinations/dest-4.jpg), center no-repeat;
+    background: linear-gradient(to top, #000000, #00000000), url(../images/destinations/dest.jpg), center no-repeat;
 }
 .destination-item:nth-of-type(5) .dest-img{
-    background: linear-gradient(to top, #000000, #00000000), url(../images/destinations/dest-5.jpg), center no-repeat;
+    background: linear-gradient(to top, #000000, #00000000), url(../images/destinations/dest.jpg), center no-repeat;
 }
 .destination-item:nth-of-type(6) .dest-img{
-    background: linear-gradient(to top, #000000, #00000000), url(../images/destinations/dest-6.jpg), center no-repeat;
+    background: linear-gradient(to top, #000000, #00000000), url(../images/destinations/dest.jpg), center no-repeat;
 }
 
 
@@ -984,7 +984,7 @@ form input[type=submit]:hover{
 }
 
 .post-img{
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.9)), url(../images/destinations/dest-1.jpg), center no-repeat;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.9)), url(../images/destinations/dest.jpg), center no-repeat;
     background-size: cover !important;
     transition: all 1.5s;
 
@@ -1070,21 +1070,21 @@ form input[type=submit]:hover{
 }
 
 .post:first-of-type .post-img{
-    background: url(../images/destinations/dest-6.jpg);
+    background: url(../images/destinations/dest.jpg);
 }
 
 .post:nth-of-type(2) .post-img{
-    background: url(../images/destinations/dest-4.jpg);
+    background: url(../images/destinations/dest.jpg);
 
 }
 
 .post:nth-of-type(3) .post-img{
-    background: url(../images/destinations/dest-3.jpg);
+    background: url(../images/destinations/dest.jpg);
 
 }
 
 .post:nth-of-type(4) .post-img{
-    background: url(../images/destinations/dest-2.jpg);
+    background: url(../images/destinations/dest.jpg);
 
 }
 
