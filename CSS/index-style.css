@@ -13,6 +13,8 @@
     --first-typing-color: #FFF ;
     --second-typing-color: #111 ;
     --third-typing-color: #004A6B ;
+    --fourth-typing-color: #333 ;
+
 
     --first-color: #00678D ;
     --second-color: #00587C ;
@@ -850,7 +852,6 @@ form input[type=submit]:hover{
     background-color: var(--first-typing-color);
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.7);
     border-bottom: rgba(51, 51, 51, 0.4) 1px solid;
-    border-radius: 10px;
 
 }
 
@@ -939,6 +940,146 @@ form input[type=submit]:hover{
     color: var(--third-typing-color);
     font-weight: bold;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+/*=================================================================
+                            POSTS
+=================================================================*/
+
+.posts{
+    padding: 80px 0;
+    background: linear-gradient(to bottom, rgba(225, 225, 225, 0.7), rgba(80, 80, 80, 0.7)), url(../images/back-w.svg), center no-repeat;
+    background-size: cover;
+}
+
+.posts-heading h2{
+    font-size: 32px;
+    font-weight: 400;
+    padding: 0 0 50px 0;
+    text-transform: uppercase;
+    color: var(--second-typing-color);
+}
+
+.posts-content{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 50px;
+    
+}
+
+.post{
+    min-height: 250px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-top: 3px solid var(--first-color-transparent);
+    border-bottom: 3px solid var(--first-color-transparent);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+}
+
+.post-img{
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.9)), url(../images/destinations/dest-1.jpg), center no-repeat;
+    background-size: cover !important;
+}
+
+.post:hover .post-img{
+    transition: all 1s;
+    transform: scale(1.2);
+}
+
+.post-content{
+    background-color: white;
+    padding: 30px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.post-content:after{
+    
+    position: absolute;
+    content: "";
+    width: 0px;
+    height: 0px;
+    border-top: 25px solid transparent;
+    border-right: 25px solid rgb(255, 255, 255);
+    border-bottom: 25px solid transparent;
+    border-left: 25px solid transparent;
+    top: 40%;
+    right: 100%;
+}
+
+
+
+.post-text a{
+    color: var(--third-typing-color);
+    font-size: 17px;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.post-text p{
+    padding: 20px 0;
+    color: var(--fourth-typing-color) ;
+    font-size: 15px;
+}
+
+.post-info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.post-info{
+    padding-top: 20px;
+    border-top: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.post-info span{
+    color: var(--fourth-typing-color) ;
+    font-size: 15px;
+}
+
+.author span{
+    color: var(--third-typing-color);
+    font-weight: 800;
+}
+
+
+
+.post:nth-of-type(3) .post-img, .post:nth-of-type(4) .post-img{
+    order: 2;
+}
+
+.post:nth-of-type(3) .post-content:after, .post:nth-of-type(4) .post-content:after{
+    position: absolute;
+    content: "";
+    width: 0px;
+    height: 0px;
+    left: 100%;
+    transform: rotate(180deg);
+}
+
+.post:first-of-type .post-img{
+    background: url(../images/destinations/dest-6.jpg);
+}
+
+.post:nth-of-type(2) .post-img{
+    background: url(../images/destinations/dest-4.jpg);
+
+}
+
+.post:nth-of-type(3) .post-img{
+    background: url(../images/destinations/dest-3.jpg);
+
+}
+
+.post:nth-of-type(4) .post-img{
+    background: url(../images/destinations/dest-2.jpg);
+
 }
 
 
@@ -1049,6 +1190,33 @@ form input[type=submit]:hover{
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(1, 1fr);
     }   
+
+    .posts-content{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .post{
+        grid-template-columns: repeat(1, 2fr);
+    }
+
+    .posts-heading {
+        text-align: center;
+    }
+
+    .post-img{
+        min-height: 250px;
+    }
+
+    .post:nth-of-type(3) .post-content, .post:nth-of-type(4) .post-content{
+        order: 2 !important;
+    }
+
+
+    .post-content:after{
+        display: none;
+    }
+    
 }
 
 
