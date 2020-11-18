@@ -664,11 +664,6 @@ form input[type=submit]:hover{
 }
 
 
-/* .test{
-    width: 500px;
-    height: 500px;
-    background-color: var(--second-color);
-} */
 
 /*=================================================================
                         FEATURES
@@ -1533,7 +1528,12 @@ form input[type=submit]:hover{
         width: 100%;
     }
 
+    .testimonials-heading{
+        text-align: center;
+    }
+
     .swiper-slide{
+        width: 100%;
         height: auto;
     }
 
