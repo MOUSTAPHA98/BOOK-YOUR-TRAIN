@@ -1,5 +1,6 @@
 var myNav = document.getElementById('mynav'),
     mybutton = document.getElementById("myBtn"),
+    metaThemeColor = document.querySelector("meta[name=theme-color]"),
     modeBtn = document.querySelector(".colors");
     
 
@@ -68,9 +69,7 @@ var settings = document.querySelector(".settings"),
     blueBtn = document.querySelector(".blue"),
     redBtn = document.querySelector(".red"),
     greenBtn = document.querySelector(".green"),
-    grayBtn = document.querySelector(".gray"),
-    metaThemeColor = document.querySelector("meta[name=theme-color]");
-    metaThemeColor.setAttribute("content","#004A6B");
+    grayBtn = document.querySelector(".gray");
     modeBtn.onclick = function(){
         "use strict";
         settings.classList.toggle("expanded");
