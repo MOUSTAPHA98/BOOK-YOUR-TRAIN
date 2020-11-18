@@ -1227,37 +1227,36 @@ form input[type=submit]:hover{
 }
 
 .testimonials-heading{
-    padding-bottom: 50px;
+    padding-bottom: 40px;
 }
+
 .testimonials-heading h2{
     color: var(--second-typing-color);
     color: trgb(255, 252, 251);
     font-size: 32px;
     font-weight: 400;
-}
 
-.testimonials-content{
-    position: relative;
-    max-width: 100%;
-}
-
-
-.swiper-container {
-    width: 100%;
-    padding-top: 50px;
-    padding-bottom: 50px;
 }
 
 .swiper-slide {
-    background-position: center;
-    background-size: cover;
-    width: 350px;
-    min-height: 350px;
-    background-color: var(--first-typing-color);
-
+    width: 100%;
+    min-height: 400px;
+    background-color: black;
 }
 
+.swiper-wrapper{
+    width: 100%;
+    background-color: sienna;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
 
+/* .swiper-container-3d .swiper-slide-shadow-left,
+.swiper-container-3d .swiper-slide-shadow-right{
+    background-image: none;
+} */
 
 /*=================================================================
                         MEDIA QUERIES
