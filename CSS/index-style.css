@@ -1385,6 +1385,10 @@ form input[type=submit]:hover{
     background-color: var(--third-color);
 }
 
+.swiper-pagination{
+    padding: 10px 0;
+}
+
 /*=================================================================
                         MEDIA QUERIES
 =================================================================*/
