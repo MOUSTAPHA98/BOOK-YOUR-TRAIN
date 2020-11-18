@@ -1578,7 +1578,12 @@ form input[type=submit]:hover{
 
     .menu{
     display: none !important;
+    
 }
+
+    .swiper-pagination {
+        display: none;
+    }
 }
 
 /*=================================================================
