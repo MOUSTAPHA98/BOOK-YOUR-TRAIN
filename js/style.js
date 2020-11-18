@@ -2,7 +2,9 @@ var myNav = document.getElementById('mynav'),
     mybutton = document.getElementById("myBtn"),
     metaThemeColor = document.querySelector("meta[name=theme-color]"),
     modeBtn = document.querySelector(".colors");
-    
+
+    metaThemeColor.setAttribute("content","#004A6B");
+
 
 window.onscroll = function () { 
     "use strict";
@@ -70,10 +72,12 @@ var settings = document.querySelector(".settings"),
     redBtn = document.querySelector(".red"),
     greenBtn = document.querySelector(".green"),
     grayBtn = document.querySelector(".gray");
-    modeBtn.onclick = function(){
-        "use strict";
-        settings.classList.toggle("expanded");
-    }
+
+    
+modeBtn.onclick = function(){
+    "use strict";
+    settings.classList.toggle("expanded");
+}
 
 blueBtn.onclick = function(){
     "use strict";
