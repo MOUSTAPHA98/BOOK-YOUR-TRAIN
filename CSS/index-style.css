@@ -1373,6 +1373,18 @@ form input[type=submit]:hover{
     color: var(--fourth-typing-color);
 }
 
+.swiper-pagination-bullet{
+    width: 10px;
+    height: 10px;
+    background-color: var(--third-color);
+}
+
+.swiper-pagination-bullet-active{
+    width: 13px;
+    height:13px;
+    background-color: var(--third-color);
+}
+
 /*=================================================================
                         MEDIA QUERIES
 =================================================================*/
