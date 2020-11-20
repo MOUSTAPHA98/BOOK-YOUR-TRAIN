@@ -1419,6 +1419,8 @@ form input[type=submit]:hover{
 
 .mob-img img{
     min-width: 100%;
+    animation: fadeup 3s ease-in-out infinite forwards;
+
 }
 
 .mob-app{
@@ -1688,13 +1690,16 @@ form input[type=submit]:hover{
 
 
 @keyframes fadeup{
-    from{
-        transform: translateY(4rem);
+    0%{
+        transform: translateY(-.5rem);
     }
 
-    to{
-        opacity: 1;
+    50%{
         transform: translatey(0rem);
+    }
+    100%{
+        transform: translatey(-.5rem);
+
     }
 }
 
