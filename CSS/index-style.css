@@ -207,6 +207,7 @@ img{
 }
 
 
+
 /*=================================================================
                             PRELOAD
 =================================================================*/
@@ -1453,6 +1454,14 @@ form input[type=submit]:hover{
                         MEDIA QUERIES
 =================================================================*/
 
+
+@media(min-width:1024px){
+
+    .mob-img-s{
+        display: none !important;
+    }
+}
+
 @media(max-width:1024px){
     
     .nav-list{
@@ -1639,16 +1648,20 @@ form input[type=submit]:hover{
     .mob-grid{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
+        grid-gap: 0;
     }
     .mob-app{
         order: 2;
     }
 
-  
+    .mob-img-lg{
+        display: none !important;
+    }
 
+    .mob-app p{
+        padding-top: 0;
+    }
 
-    
-    
 }
 
 
