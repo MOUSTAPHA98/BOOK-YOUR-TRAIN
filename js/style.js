@@ -1,7 +1,10 @@
 var myNav = document.getElementById('mynav'),
     mybutton = document.getElementById("myBtn"),
     metaThemeColor = document.querySelector("meta[name=theme-color]"),
-    mobSectionImg  = document.querySelector(".mob-section-img"),
+    mobBImg  = document.querySelector(".mob-b-img"),
+    mobRImg  = document.querySelector(".mob-r-img"),
+    mobGreenImg  = document.querySelector(".mob-green-img"),
+    mobGrayImg  = document.querySelector(".mob-gray-img"),
     modeBtn = document.querySelector(".colors");
 
     metaThemeColor.setAttribute("content","#004A6B");
@@ -85,7 +88,10 @@ blueBtn.onclick = function(){
     document.body.classList.remove("red-mod", "green-mod", "gray-mod");
     document.body.classList.add("blue-mod");
     metaThemeColor.setAttribute("content","#004A6B");
-    mobSectionImg.setAttribute("src", "images/mob/mob-b-dark.png");
+    mobBImg.style.display = "block";
+    mobRImg.style.display = "none !important";
+    mobGreenImg.style.display = "none !important";
+    mobGrayImg.style.display = "none !important";
 }
 
 redBtn.onclick = function(){
@@ -93,7 +99,10 @@ redBtn.onclick = function(){
     document.body.classList.remove("blue-mod", "green-mod", "gray-mod");
     document.body.classList.add("red-mod");
     metaThemeColor.setAttribute("content","#830209");
-    mobSectionImg.setAttribute("src", "images/mob/mob-r-dark.png");
+    mobBImg.style.display = "none";
+    mobRImg.style.display = "block";
+    mobGreenImg.style.display = "none";
+    mobGrayImg.style.display = "none";
 
 
 }
@@ -103,7 +112,10 @@ greenBtn.onclick = function(){
     document.body.classList.remove("red-mod", "blue-mod", "gray-mod");
     document.body.classList.add("green-mod");
     metaThemeColor.setAttribute("content","#272F19");
-    mobSectionImg.setAttribute("src", "images/mob/mob-green-dark.png");
+    mobBImg.style.display = "none";
+    mobRImg.style.display = "none";
+    mobGreenImg.style.display = "block";
+    mobGrayImg.style.display = "none";
 
 
 }
@@ -113,7 +125,10 @@ grayBtn.onclick = function(){
     document.body.classList.remove("blue-mod", "red-mod", "green-mod");
     document.body.classList.add("gray-mod");
     metaThemeColor.setAttribute("content","#151821");
-    mobSectionImg.setAttribute("src", "images/mob/mob-gray-dark.png");
+    mobBImg.style.display = "none";
+    mobRImg.style.display = "none";
+    mobGreenImg.style.display = "none";
+    mobGrayImg.style.display = "block";
 
 
 }
