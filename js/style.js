@@ -5,7 +5,6 @@ var myNav = document.getElementById('mynav'),
     mobRImgLg  = document.querySelector(".mob-r-img-lg"),
     mobGreenImgLg  = document.querySelector(".mob-green-img-lg"),
     mobGrayImgLg  = document.querySelector(".mob-gray-img-lg"),
-    
     mobBImgS  = document.querySelector(".mob-b-img-s"),
     mobRImgS  = document.querySelector(".mob-r-img-s"),
     mobGreenImgS  = document.querySelector(".mob-green-img-s"),
@@ -95,13 +94,13 @@ blueBtn.onclick = function(){
     metaThemeColor.setAttribute("content","#004A6B");
 
     mobBImgLg.style.display = "block";
-    mobRImgLg.style.display = "none !important";
-    mobGreenImgLg.style.display = "none !important";
-    mobGrayImgLg.style.display = "none !important";
+    mobRImgLg.style.display = "none";
+    mobGreenImgLg.style.display = "none";
+    mobGrayImgLg.style.display = "none";
     mobBImgS.style.display = "block";
-    mobRImgS.style.display = "none !important";
-    mobGreenImgS.style.display = "none !important";
-    mobGrayImgS.style.display = "none !important";
+    mobRImgS.style.display = "none";
+    mobGreenImgS.style.display = "none";
+    mobGrayImgS.style.display = "none";
 }
 
 redBtn.onclick = function(){
