@@ -453,7 +453,7 @@ img{
 
 .brand-link img{
     pointer-events: none;
-    min-width: 285px;
+    width: 270px;
     z-index: 3;
 }
 
@@ -1458,6 +1458,48 @@ form input[type=submit]:hover{
 
 
 /*=================================================================
+                                FOOTER
+=================================================================*/
+
+.footer{
+    background: linear-gradient( rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.75) 100% ), url(../images/b-pattern.png) !important;
+}
+
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer p{
+    color: var(--first-typing-color);
+    text-transform: capitalize;
+}
+
+.footer p span{
+    display: inline-block;
+    animation: pulse 1s ease-in-out infinite forwards;
+}
+
+.social-links{
+    padding: 20px 0;
+}
+
+.social-links a{
+    padding: 0 5px;
+}
+
+.social-links i{
+    padding: 0 7px;
+    color: var(--first-color);
+    transition: .5s;
+    font-size: 40px;
+}
+
+.social-links i:hover{
+    color: var(--third-color);
+}
+/*=================================================================
                         MEDIA QUERIES
 =================================================================*/
 
@@ -1669,6 +1711,21 @@ form input[type=submit]:hover{
         padding-top: 0;
     }
 
+    .footer{
+        padding: 15px 0;
+    }
+
+    .footer-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .e-small{
+        width: 100px !important;
+    }
+
 }
 
 
@@ -1710,6 +1767,20 @@ form input[type=submit]:hover{
 
     50%{
         transform: scale(1.03);
+    }
+
+    100%{
+        transform: scale(1);
+    }
+}
+
+@keyframes pulse{
+    0%{
+        transform: scale(1);
+    }
+
+    50%{
+        transform: scale(1.1);
     }
 
     100%{
