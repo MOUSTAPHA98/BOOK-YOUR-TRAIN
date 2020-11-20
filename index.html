@@ -893,6 +893,8 @@
                             </div>
                         </div>
                         <div class="swiper-pagination"></div>
+                        <!-- <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div> -->
                     </div>
                 </div>
             </div>
@@ -902,6 +904,43 @@
 
 <!--==========================================================================
                             END TESTIMONIALS SECTION
+===========================================================================-->
+
+<!--==========================================================================
+                            START MOBILE SECTION
+===========================================================================-->
+
+    <section class="mobile-app">
+        <div class="container">
+            <div class="mobile-app-container">
+
+                <div class="mob-app animate-bottom">
+                    <h2>
+                        DOWNLOAD OUR APP NOW
+                    </h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates aperiam dolorem consectetur et adipisci cum, voluptatum rerum sit magnam sunt perferendis saepe, voluptas, quas praesentium! Aspernatur possimus dolore quasi eius!
+                    </p>
+                    <div class="mob-app-links">
+                        <a href="http://play.google.com" class="google-play">
+                            <img src="images/mob/google-play-black.png" alt="">
+                        </a>
+                        <a href="https://www.apple.com/eg-ar/app-store/" class="app-store">
+                            <img src="images/mob/app-store-black.png" alt="">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="mob-img animate-top">
+                    <img class="mob-section-img" src="images/mob/mob-b-dark.png" alt="">
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+<!--==========================================================================
+                            END MOBILE SECTION
 ===========================================================================-->
 
 
@@ -919,6 +958,10 @@
       grabCursor: true,
       centeredSlides: true,
       slidesPerView: 'auto',
+      autoplay: {
+          delay: 7000,
+          disableOnInteraction: false,
+      },
       coverflowEffect: {
         rotate: 0,
         stretch: 0,
@@ -928,6 +971,10 @@
       },
       pagination: {
         el: '.swiper-pagination',
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
       },
        loop:true,
     });

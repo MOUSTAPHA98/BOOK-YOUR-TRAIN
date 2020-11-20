@@ -741,21 +741,21 @@ form input[type=submit]:hover{
 }
 
 .services-heading{
-    color: var(--second-typing-color);
+    color: var(--fourth-typing-color);
     padding-bottom: 50px;
 }
 
 .services-heading span{
     font-size: 16px;
-    font-weight: 400;
-    color: var(--second-typing-color);
+    font-weight: 600;
+    color: var(--fourth-typing-color);
 }
 
 .services-heading h2{
-    font-size: 32px;
-    font-weight: 400;
+    font-size: 36px;
+    font-weight: 600;
     padding: 20px 0;
-    color: var(--second-typing-color);
+    color: var(--fourth-typing-color);
 
 }
 
@@ -836,8 +836,8 @@ form input[type=submit]:hover{
 }
 
 .destinations-heading h2{
-    font-size: 32px;
-    font-weight: 400;
+    font-size: 36px;
+    font-weight: 600;
     color: var(--first-typing-color);
     text-transform: uppercase;
 }
@@ -908,9 +908,9 @@ form input[type=submit]:hover{
 }
 
 .depart-dest span, .arrive-dest span{
-    font-size: 22px;
+    font-size: 18px;
     color: var(--third-typing-color);
-    font-weight: 700;
+    font-weight: 800;
     text-transform: capitalize;
 }
 
@@ -937,7 +937,7 @@ form input[type=submit]:hover{
 }
 
 .travel-price span{
-    font-size: 32px;
+    font-size: 36px;
     color: var(--third-typing-color);
     font-weight: bold;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
@@ -954,11 +954,11 @@ form input[type=submit]:hover{
 }
 
 .posts-heading h2{
-    font-size: 32px;
-    font-weight: 400;
+    font-size: 36px;
+    font-weight: 600;
     padding: 0 0 50px 0;
     text-transform: uppercase;
-    color: var(--second-typing-color);
+    color: var(--fourth-typing-color);
 }
 
 .posts-content{
@@ -1098,8 +1098,8 @@ form input[type=submit]:hover{
 }
 
 .e-t-adv-heading h2{
-    font-size: 32px;
-    font-weight: 400 !important;
+    font-size: 36px;
+    font-weight: 600 !important;
     color: var(--first-typing-color);
     text-transform: uppercase;
 }
@@ -1175,8 +1175,8 @@ form input[type=submit]:hover{
 .adv p{
     padding: 40px 0 0 0;
     color: var(--first-typing-color);
-    line-height: 1.3;
-    font-size: 18px;
+    line-height: 1.7;
+    font-size: 16px;
     font-weight: 300;
     transition: all 2s;
 
@@ -1230,15 +1230,15 @@ form input[type=submit]:hover{
 
 .testimonials-heading span{
     font-size: 16px;
-    font-weight: 400;
-    color: var(--second-typing-color);
+    font-weight: 600;
+    color: var(--fourth-typing-color);
 }
 
 .testimonials-heading h2{
-    font-size: 32px;
-    font-weight: 400;
+    font-size: 36px;
+    font-weight: 600;
     padding: 20px 0;
-    color:var(--second-typing-color);
+    color:var(--fourth-typing-color);
     
 }
 
@@ -1351,8 +1351,8 @@ form input[type=submit]:hover{
 
 
 .review-text p{
-    font-size: 16px;
-    line-height: 1.5;
+    font-size: 18px;
+    line-height: 1.7;
     color: var(--second-typing-color);
     padding: 15px 0;
 }
@@ -1391,6 +1391,59 @@ form input[type=submit]:hover{
 }
 
 /*=================================================================
+                        MOBILE APP
+=================================================================*/
+
+.mobile-app{
+    padding: 80px 0;
+    background: linear-gradient(to bottom, var(--third-color-transparent), var(--third-color-transparent)), url(../images/b-pattern.png), center no-repeat;
+}
+
+.mobile-app-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 50px;
+}
+
+.mob-img{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.mob-img img{
+    min-width: 100%;
+}
+
+.mob-app{
+    display: flex;
+    flex-direction: column;
+}
+
+.mob-app h2{
+    font-size: 36px;
+    font-weight: 600;
+    color: var(--first-typing-color);
+    text-transform: uppercase;
+}
+
+.mob-app p{
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.7;
+    color: var(--first-typing-color);
+    padding: 35px 0;
+
+}
+
+.mob-app-links a img{
+    padding: 10px;
+}
+
+
+
+/*=================================================================
                         MEDIA QUERIES
 =================================================================*/
 
@@ -1409,13 +1462,13 @@ form input[type=submit]:hover{
     }
     .hero-container h2{
         font-size: 50px;
-        font-weight: 400;
+        font-weight: 600;
 
     
     }
     .hero-container span{
         font-size: 50px;
-        font-weight: 400;
+        font-weight: 600;
     }
     .welcome{
         font-weight: 300 !important;
@@ -1572,6 +1625,17 @@ form input[type=submit]:hover{
     .client-info{
         text-align: center;
     }
+
+    .mobile-app{
+        text-align: center;
+    }
+    
+    .mobile-app-container{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+  
 
 
     

@@ -1,6 +1,7 @@
 var myNav = document.getElementById('mynav'),
     mybutton = document.getElementById("myBtn"),
     metaThemeColor = document.querySelector("meta[name=theme-color]"),
+    mobSectionImg  = document.querySelector(".mob-section-img"),
     modeBtn = document.querySelector(".colors");
 
     metaThemeColor.setAttribute("content","#004A6B");
@@ -84,6 +85,7 @@ blueBtn.onclick = function(){
     document.body.classList.remove("red-mod", "green-mod", "gray-mod");
     document.body.classList.add("blue-mod");
     metaThemeColor.setAttribute("content","#004A6B");
+    mobSectionImg.setAttribute("src", "images/mob/mob-b-dark.png");
 }
 
 redBtn.onclick = function(){
@@ -91,6 +93,8 @@ redBtn.onclick = function(){
     document.body.classList.remove("blue-mod", "green-mod", "gray-mod");
     document.body.classList.add("red-mod");
     metaThemeColor.setAttribute("content","#830209");
+    mobSectionImg.setAttribute("src", "images/mob/mob-r-dark.png");
+
 
 }
 
@@ -99,6 +103,8 @@ greenBtn.onclick = function(){
     document.body.classList.remove("red-mod", "blue-mod", "gray-mod");
     document.body.classList.add("green-mod");
     metaThemeColor.setAttribute("content","#272F19");
+    mobSectionImg.setAttribute("src", "images/mob/mob-green-dark.png");
+
 
 }
 
@@ -107,6 +113,8 @@ grayBtn.onclick = function(){
     document.body.classList.remove("blue-mod", "red-mod", "green-mod");
     document.body.classList.add("gray-mod");
     metaThemeColor.setAttribute("content","#151821");
+    mobSectionImg.setAttribute("src", "images/mob/mob-gray-dark.png");
+
 
 }
 
