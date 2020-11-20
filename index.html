@@ -20,10 +20,19 @@
     <script src="js/jquery-3.5.1.js"></script>
     <script src="js/scrollreveal.js"></script>
 
+    <script>
+        var metaThemeColor = document.querySelector("meta[name=theme-color]");
+        $(window).on('load', function(){
+            "use strict";
+            $("body").addClass("loaded");
+            metaThemeColor.setAttribute("content","#004A6B");
+        })
+    </script>
+
 
 </head>
 
-<body class="blue-mod">
+<body>
 
 <!--==========================================================================
                                 PRELOAD
