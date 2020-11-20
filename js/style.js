@@ -1,10 +1,15 @@
 var myNav = document.getElementById('mynav'),
     mybutton = document.getElementById("myBtn"),
     metaThemeColor = document.querySelector("meta[name=theme-color]"),
-    mobBImg  = document.querySelector(".mob-b-img"),
-    mobRImg  = document.querySelector(".mob-r-img"),
-    mobGreenImg  = document.querySelector(".mob-green-img"),
-    mobGrayImg  = document.querySelector(".mob-gray-img"),
+    mobBImgLg  = document.querySelector(".mob-b-img-lg"),
+    mobRImgLg  = document.querySelector(".mob-r-img-lg"),
+    mobGreenImgLg  = document.querySelector(".mob-green-img-lg"),
+    mobGrayImgLg  = document.querySelector(".mob-gray-img-lg"),
+    
+    mobBImgS  = document.querySelector(".mob-b-img-s"),
+    mobRImgS  = document.querySelector(".mob-r-img-s"),
+    mobGreenImgS  = document.querySelector(".mob-green-img-s"),
+    mobGrayImgS  = document.querySelector(".mob-gray-img-s"),
     modeBtn = document.querySelector(".colors");
 
     metaThemeColor.setAttribute("content","#004A6B");
@@ -88,10 +93,15 @@ blueBtn.onclick = function(){
     document.body.classList.remove("red-mod", "green-mod", "gray-mod");
     document.body.classList.add("blue-mod");
     metaThemeColor.setAttribute("content","#004A6B");
-    mobBImg.style.display = "block";
-    mobRImg.style.display = "none !important";
-    mobGreenImg.style.display = "none !important";
-    mobGrayImg.style.display = "none !important";
+
+    mobBImgLg.style.display = "block";
+    mobRImgLg.style.display = "none !important";
+    mobGreenImgLg.style.display = "none !important";
+    mobGrayImgLg.style.display = "none !important";
+    mobBImgS.style.display = "block";
+    mobRImgS.style.display = "none !important";
+    mobGreenImgS.style.display = "none !important";
+    mobGrayImgS.style.display = "none !important";
 }
 
 redBtn.onclick = function(){
@@ -99,10 +109,16 @@ redBtn.onclick = function(){
     document.body.classList.remove("blue-mod", "green-mod", "gray-mod");
     document.body.classList.add("red-mod");
     metaThemeColor.setAttribute("content","#830209");
-    mobBImg.style.display = "none";
-    mobRImg.style.display = "block";
-    mobGreenImg.style.display = "none";
-    mobGrayImg.style.display = "none";
+
+    mobBImgLg.style.display = "none";
+    mobRImgLg.style.display = "block";
+    mobGreenImgLg.style.display = "none";
+    mobGrayImgLg.style.display = "none";
+    mobBImgS.style.display = "none";
+    mobRImgS.style.display = "block";
+    mobGreenImgS.style.display = "none";
+    mobGrayImgS.style.display = "none";
+
 
 
 }
@@ -112,10 +128,15 @@ greenBtn.onclick = function(){
     document.body.classList.remove("red-mod", "blue-mod", "gray-mod");
     document.body.classList.add("green-mod");
     metaThemeColor.setAttribute("content","#272F19");
-    mobBImg.style.display = "none";
-    mobRImg.style.display = "none";
-    mobGreenImg.style.display = "block";
-    mobGrayImg.style.display = "none";
+
+    mobBImgLg.style.display = "none";
+    mobRImgLg.style.display = "none";
+    mobGreenImgLg.style.display = "block";
+    mobGrayImgLg.style.display = "none";
+    mobBImgS.style.display = "none";
+    mobRImgS.style.display = "none";
+    mobGreenImgS.style.display = "block";
+    mobGrayImgS.style.display = "none";
 
 
 }
@@ -125,10 +146,15 @@ grayBtn.onclick = function(){
     document.body.classList.remove("blue-mod", "red-mod", "green-mod");
     document.body.classList.add("gray-mod");
     metaThemeColor.setAttribute("content","#151821");
-    mobBImg.style.display = "none";
-    mobRImg.style.display = "none";
-    mobGreenImg.style.display = "none";
-    mobGrayImg.style.display = "block";
+
+    mobBImgLg.style.display = "none";
+    mobRImgLg.style.display = "none";
+    mobGreenImgLg.style.display = "none";
+    mobGrayImgLg.style.display = "block";
+    mobBImgS.style.display = "none";
+    mobRImgS.style.display = "none";
+    mobGreenImgS.style.display = "none";
+    mobGrayImgS.style.display = "block";
 
 
 }
