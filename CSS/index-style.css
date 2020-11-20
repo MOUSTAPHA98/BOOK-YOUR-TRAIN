@@ -351,7 +351,6 @@ img{
 #myBtn i{
     font-size: 18px;
     color: var(--third-color);
-    /* border-radius: 50%; */
     background-color: var(--first-typing-color);
     padding: 11px 12px;
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.801);
