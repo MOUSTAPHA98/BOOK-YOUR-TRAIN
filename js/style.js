@@ -105,7 +105,6 @@ blueBtn.onclick = function(){
     document.body.classList.add(this.getAttribute("data-color"));
     var pageMod = localStorage.setItem("pageColor", this.getAttribute("data-color")),
         pageHeadTheme = localStorage.setItem("pageTheme", metaThemeColor.getAttribute("content"));
-
 }
 
 redBtn.onclick = function(){
@@ -125,7 +124,7 @@ redBtn.onclick = function(){
     document.body.classList.add(this.getAttribute("data-color"));
     var pageMod = localStorage.setItem("pageColor", this.getAttribute("data-color")),
         pageHeadTheme = localStorage.setItem("pageTheme", metaThemeColor.getAttribute("content"));
-
+        
 
 
 
@@ -148,6 +147,7 @@ greenBtn.onclick = function(){
     document.body.classList.add(this.getAttribute("data-color"));
     var pageMod = localStorage.setItem("pageColor", this.getAttribute("data-color")),
         pageHeadTheme = localStorage.setItem("pageTheme", metaThemeColor.getAttribute("content"));
+        
 
 
 
@@ -171,7 +171,5 @@ grayBtn.onclick = function(){
     document.body.classList.add(this.getAttribute("data-color"));
     var pageMod = localStorage.setItem("pageColor", this.getAttribute("data-color")),
         pageHeadTheme = localStorage.setItem("pageTheme", metaThemeColor.getAttribute("content"));
-
-
 
 }
