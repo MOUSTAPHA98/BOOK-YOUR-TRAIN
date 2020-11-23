@@ -1,6 +1,6 @@
 document.body.classList.add(localStorage.getItem("pageColor"));
 console.log(localStorage.getItem("pageTheme"));
-metaThemeColor.setAttribute("content", localStorage.getItem("pageTheme"));
+metaThemeColor.setAttribute("content", (localStorage.getItem("pageTheme")));
 
 
 var myNav = document.getElementById('mynav'),
