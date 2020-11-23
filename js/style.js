@@ -1,5 +1,6 @@
 document.body.classList.add(localStorage.getItem("pageColor"));
-console.log(localStorage.getItem("pageTheme"));
+metaThemeColor.setAttribute("content", (localStorage.getItem("pageTheme")));
+
 
 
 var myNav = document.getElementById('mynav'),
@@ -15,7 +16,6 @@ var myNav = document.getElementById('mynav'),
     mobGrayImgS  = document.querySelector(".mob-gray-img-s"),
     modeBtn = document.querySelector(".colors");
 
-metaThemeColor.setAttribute("content", (localStorage.getItem("pageTheme")));
 
 
 
@@ -98,7 +98,6 @@ modeBtn.onclick = function(){
 
 blueBtn.onclick = function(){
     "use strict";
-    metaThemeColor.setAttribute("content","#004A6B");
 
     mobBImgLg.style.display = "block";
     mobRImgLg.style.display = "none";
@@ -109,10 +108,12 @@ blueBtn.onclick = function(){
     mobGreenImgS.style.display = "none";
     mobGrayImgS.style.display = "none";
 
+
     document.body.className = "loaded";
     document.body.classList.add(this.getAttribute("data-color"));
+    metaThemeColor.setAttribute("content","#004A6B");
     var pageMod = localStorage.setItem("pageColor", this.getAttribute("data-color")),
-        pageTheme = localStorage.setItem("pageTheme", metaThemeColor.getAttribute("content"));
+        pageHeadTheme = localStorage.setItem("pageTheme", metaThemeColor.getAttribute("content"));
         console.log(metaThemeColor.getAttribute("content"));
         console.log(localStorage.getItem("pageTheme"));
 
@@ -120,7 +121,6 @@ blueBtn.onclick = function(){
 
 redBtn.onclick = function(){
     "use strict";
-    metaThemeColor.setAttribute("content","#830209");
 
     mobBImgLg.style.display = "none";
     mobRImgLg.style.display = "block";
@@ -133,8 +133,9 @@ redBtn.onclick = function(){
 
     document.body.className = "loaded";
     document.body.classList.add(this.getAttribute("data-color"));
+    metaThemeColor.setAttribute("content","#830209");
     var pageMod = localStorage.setItem("pageColor", this.getAttribute("data-color")),
-        pageTheme = localStorage.setItem("pageTheme", metaThemeColor.getAttribute("content"));
+        pageHeadTheme = localStorage.setItem("pageTheme", metaThemeColor.getAttribute("content"));
         console.log(metaThemeColor.getAttribute("content"));
         console.log(localStorage.getItem("pageTheme"));
 
