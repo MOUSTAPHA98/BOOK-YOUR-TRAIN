@@ -1,3 +1,6 @@
+document.body.classList.add(localStorage.getItem("pageColor"));
+
+
 var myNav = document.getElementById('mynav'),
     mybutton = document.getElementById("myBtn"),
     metaThemeColor = document.querySelector("meta[name=theme-color]"),
@@ -73,6 +76,7 @@ var menuCloseBtn = document.getElementById("fa-times");
 *
 */
 
+
 /*   =====   CHANGE COLORS   =====   */
 
 var settings = document.querySelector(".settings"),
@@ -101,6 +105,10 @@ blueBtn.onclick = function(){
     mobRImgS.style.display = "none";
     mobGreenImgS.style.display = "none";
     mobGrayImgS.style.display = "none";
+
+    document.body.classList.add(this.getAttribute("data-color"));
+    var pageMod = localStorage.setItem("pageColor", this.getAttribute("data-color"));
+
 }
 
 redBtn.onclick = function(){
@@ -117,6 +125,9 @@ redBtn.onclick = function(){
     mobRImgS.style.display = "block";
     mobGreenImgS.style.display = "none";
     mobGrayImgS.style.display = "none";
+
+    document.body.classList.add(this.getAttribute("data-color"));
+    var pageMod = localStorage.setItem("pageColor", this.getAttribute("data-color"));
 
 
 
@@ -137,6 +148,10 @@ greenBtn.onclick = function(){
     mobGreenImgS.style.display = "block";
     mobGrayImgS.style.display = "none";
 
+    document.body.classList.add(this.getAttribute("data-color"));
+    var pageMod = localStorage.setItem("pageColor", this.getAttribute("data-color"));
+
+
 
 }
 
@@ -154,6 +169,9 @@ grayBtn.onclick = function(){
     mobRImgS.style.display = "none";
     mobGreenImgS.style.display = "none";
     mobGrayImgS.style.display = "block";
+
+    document.body.classList.add(this.getAttribute("data-color"));
+    var pageMod = localStorage.setItem("pageColor", this.getAttribute("data-color"));
 
 
 }
