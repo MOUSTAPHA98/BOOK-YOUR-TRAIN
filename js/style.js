@@ -1,4 +1,6 @@
 document.body.classList.add(localStorage.getItem("pageColor"));
+document.body.classList.add(localStorage.getItem("pageColor"));
+metaThemeColor.setAttribute("content", localStorage.getItem("pageTheme"));
 
 
 var myNav = document.getElementById('mynav'),
@@ -91,10 +93,11 @@ modeBtn.onclick = function(){
     settings.classList.toggle("expanded");
 }
 
+
+
+
 blueBtn.onclick = function(){
     "use strict";
-    document.body.classList.remove("red-mod", "green-mod", "gray-mod");
-    document.body.classList.add("blue-mod");
     metaThemeColor.setAttribute("content","#004A6B");
 
     mobBImgLg.style.display = "block";
@@ -106,15 +109,16 @@ blueBtn.onclick = function(){
     mobGreenImgS.style.display = "none";
     mobGrayImgS.style.display = "none";
 
+    document.body.className = "loaded";
     document.body.classList.add(this.getAttribute("data-color"));
-    var pageMod = localStorage.setItem("pageColor", this.getAttribute("data-color"));
+    var pageMod = localStorage.setItem("pageColor", this.getAttribute("data-color")),
+        pageTheme = localStorage.setItem("pageTheme", metaThemeColor.getAttribute("content") );
+        console.log(metaThemeColor.getAttribute("content"));
 
 }
 
 redBtn.onclick = function(){
     "use strict";
-    document.body.classList.remove("blue-mod", "green-mod", "gray-mod");
-    document.body.classList.add("red-mod");
     metaThemeColor.setAttribute("content","#830209");
 
     mobBImgLg.style.display = "none";
@@ -126,8 +130,12 @@ redBtn.onclick = function(){
     mobGreenImgS.style.display = "none";
     mobGrayImgS.style.display = "none";
 
+    document.body.className = "loaded";
     document.body.classList.add(this.getAttribute("data-color"));
-    var pageMod = localStorage.setItem("pageColor", this.getAttribute("data-color"));
+    var pageMod = localStorage.setItem("pageColor", this.getAttribute("data-color")),
+        pageTheme = localStorage.setItem("pageTheme", metaThemeColor.getAttribute("content") );
+        console.log(metaThemeColor.getAttribute("content"));
+
 
 
 
@@ -135,8 +143,6 @@ redBtn.onclick = function(){
 
 greenBtn.onclick = function(){
     "use strict";
-    document.body.classList.remove("red-mod", "blue-mod", "gray-mod");
-    document.body.classList.add("green-mod");
     metaThemeColor.setAttribute("content","#272F19");
 
     mobBImgLg.style.display = "none";
@@ -148,8 +154,12 @@ greenBtn.onclick = function(){
     mobGreenImgS.style.display = "block";
     mobGrayImgS.style.display = "none";
 
+    document.body.className = "loaded";
     document.body.classList.add(this.getAttribute("data-color"));
-    var pageMod = localStorage.setItem("pageColor", this.getAttribute("data-color"));
+    var pageMod = localStorage.setItem("pageColor", this.getAttribute("data-color")),
+        pageTheme = localStorage.setItem("pageTheme", metaThemeColor.getAttribute("content") );
+        console.log(metaThemeColor.getAttribute("content"));
+
 
 
 
@@ -157,8 +167,6 @@ greenBtn.onclick = function(){
 
 grayBtn.onclick = function(){
     "use strict";
-    document.body.classList.remove("blue-mod", "red-mod", "green-mod");
-    document.body.classList.add("gray-mod");
     metaThemeColor.setAttribute("content","#151821");
 
     mobBImgLg.style.display = "none";
@@ -170,8 +178,12 @@ grayBtn.onclick = function(){
     mobGreenImgS.style.display = "none";
     mobGrayImgS.style.display = "block";
 
+    document.body.className = "loaded";
     document.body.classList.add(this.getAttribute("data-color"));
-    var pageMod = localStorage.setItem("pageColor", this.getAttribute("data-color"));
+    var pageMod = localStorage.setItem("pageColor", this.getAttribute("data-color")),
+        pageTheme = localStorage.setItem("pageTheme", metaThemeColor.getAttribute("content") );
+        console.log(metaThemeColor.getAttribute("content"));
+
 
 
 }
