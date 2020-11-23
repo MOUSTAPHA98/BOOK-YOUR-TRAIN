@@ -14,7 +14,6 @@ var myNav = document.getElementById('mynav'),
     mobGrayImgS  = document.querySelector(".mob-gray-img-s"),
     modeBtn = document.querySelector(".colors");
 
-    metaThemeColor.setAttribute("content", localStorage.getItem("pageTheme"));
 
 
 

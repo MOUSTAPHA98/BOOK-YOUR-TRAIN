@@ -2,7 +2,8 @@
 
 $(document).ready(function(){
     "use strict";
-    // metaThemeColor.setAttribute("content","#004A6B");
+    metaThemeColor.setAttribute("content", localStorage.getItem("pageTheme"));
+
 });
 
 $(window).on('load', function(){
