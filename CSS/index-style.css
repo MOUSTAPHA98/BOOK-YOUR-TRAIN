@@ -9,7 +9,7 @@
                             VARIABLES
 =================================================================*/
 
-/* :root{
+:root{
     --first-typing-color: #FFF ;
     --second-typing-color: #111 ;
     --third-typing-color: #004A6B ;
@@ -23,7 +23,7 @@
     --second-color-transparent: #00587Cd0 ;
     --third-color-transparent: #004A6Be0 ;
     --fourth-color-transparent: #00496b30 ;
-} */
+}
 
 .blue-mod{
     --first-typing-color: #FFF ;
