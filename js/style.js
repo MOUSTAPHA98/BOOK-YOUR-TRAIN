@@ -1,5 +1,4 @@
 document.body.classList.add(localStorage.getItem("pageColor"));
-metaThemeColor.setAttribute("content", localStorage.getItem("pageTheme"));
 
 
 var myNav = document.getElementById('mynav'),
@@ -14,6 +13,9 @@ var myNav = document.getElementById('mynav'),
     mobGreenImgS  = document.querySelector(".mob-green-img-s"),
     mobGrayImgS  = document.querySelector(".mob-gray-img-s"),
     modeBtn = document.querySelector(".colors");
+
+    metaThemeColor.setAttribute("content", localStorage.getItem("pageTheme"));
+
 
 
 window.onscroll = function () { 
