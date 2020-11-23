@@ -1,4 +1,5 @@
 document.body.classList.add(localStorage.getItem("pageColor"));
+metaThemeColor.setAttribute("content", localStorage.getItem("pageTheme"));
 
 
 var myNav = document.getElementById('mynav'),
@@ -14,7 +15,7 @@ var myNav = document.getElementById('mynav'),
     mobGrayImgS  = document.querySelector(".mob-gray-img-s"),
     modeBtn = document.querySelector(".colors");
 
-    
+
 window.onscroll = function () { 
     "use strict";
     if (document.body.scrollTop >= 700 || document.documentElement.scrollTop >= 700 )
@@ -104,7 +105,9 @@ blueBtn.onclick = function(){
     mobGrayImgS.style.display = "none";
 
     document.body.classList.add(this.getAttribute("data-color"));
-    var pageMod = localStorage.setItem("pageColor", this.getAttribute("data-color"));
+    var pageMod = localStorage.setItem("pageColor", this.getAttribute("data-color")),
+        pageHeadTheme = localStorage.setItem("pageTheme", metaThemeColor.getAttribute("content"));
+        console.log(localStorage.getItem("pageTheme"));
 
 }
 
@@ -123,7 +126,10 @@ redBtn.onclick = function(){
     mobGrayImgS.style.display = "none";
 
     document.body.classList.add(this.getAttribute("data-color"));
-    var pageMod = localStorage.setItem("pageColor", this.getAttribute("data-color"));
+    var pageMod = localStorage.setItem("pageColor", this.getAttribute("data-color")),
+        pageHeadTheme = localStorage.setItem("pageTheme", metaThemeColor.getAttribute("content"));
+        console.log(localStorage.getItem("pageTheme"));
+
 
 
 
@@ -144,7 +150,10 @@ greenBtn.onclick = function(){
     mobGrayImgS.style.display = "none";
 
     document.body.classList.add(this.getAttribute("data-color"));
-    var pageMod = localStorage.setItem("pageColor", this.getAttribute("data-color"));
+    var pageMod = localStorage.setItem("pageColor", this.getAttribute("data-color")),
+        pageHeadTheme = localStorage.setItem("pageTheme", metaThemeColor.getAttribute("content"));
+        console.log(localStorage.getItem("pageTheme"));
+
 
 
 
@@ -165,7 +174,10 @@ grayBtn.onclick = function(){
     mobGrayImgS.style.display = "block";
 
     document.body.classList.add(this.getAttribute("data-color"));
-    var pageMod = localStorage.setItem("pageColor", this.getAttribute("data-color"));
+    var pageMod = localStorage.setItem("pageColor", this.getAttribute("data-color")),
+        pageHeadTheme = localStorage.setItem("pageTheme", metaThemeColor.getAttribute("content"));
+        console.log(localStorage.getItem("pageTheme"));
+
 
 
 }
