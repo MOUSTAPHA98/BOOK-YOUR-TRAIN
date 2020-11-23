@@ -1,6 +1,3 @@
-document.body.classList.add(localStorage.getItem("pageColor"));
-
-
 var myNav = document.getElementById('mynav'),
     mybutton = document.getElementById("myBtn"),
     metaThemeColor = document.querySelector("meta[name=theme-color]"),
@@ -178,18 +175,3 @@ grayBtn.onclick = function(){
 
 
 }
-
-
-
-
-
-function getPresentColor() {
-    
-}
-
-function changeThemeColor() {
-    var metaThemeColor = document.querySelector("meta[name=theme-color]");
-    metaThemeColor.setAttribute("content", getPresentColor());
-}
-
-changeThemeColor();
