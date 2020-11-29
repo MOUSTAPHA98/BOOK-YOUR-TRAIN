@@ -3,7 +3,7 @@
 =================================================================*/
 
 /*==  Lato  ==*/
-/* @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
 /*=================================================================
                             VARIABLES
@@ -61,7 +61,7 @@
     --first-color: #41492F ;
     --second-color: #313922 ;
     --third-color: #272F19;
-    --first-color-transparent: 41492F70;
+    --first-color-transparent: #41492F70;
     --second-color-transparent: #313922d0 ;
     --third-color-transparent: #272F19e0 ;
     --fouth-color-transparent: #272F1930 ;
@@ -84,21 +84,18 @@
                             SCROLL BAR
 =================================================================*/
 
-/* width */
 ::-webkit-scrollbar {
     width: 10px;
-  }
+}
   
-  /* Track */
-  ::-webkit-scrollbar-track {
+::-webkit-scrollbar-track {
     background: var(--second-typing-color);
-  }
+}
   
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb {
     background: var(--first-color);
     height: 10px;
-  }
+}
 
 /*=================================================================
                            SETTINGS
@@ -346,6 +343,8 @@ img{
     bottom: 30px; 
     right: 30px;
     cursor: pointer;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.801);
+
   }
 
 #myBtn i{
@@ -353,7 +352,6 @@ img{
     color: var(--third-color);
     background-color: var(--first-typing-color);
     padding: 11px 12px;
-    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.801);
     transition: all .5s ease-in-out;
 
 }
