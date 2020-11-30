@@ -74,6 +74,10 @@ var menuCloseBtn = document.getElementById("fa-times");
 /*   =====   CHANGE COLORS   =====   */
 
 var settings = document.querySelector(".theme-settings"),
+    theme01 = document.querySelector(".theme-01"),
+    theme02 = document.querySelector(".theme-02"),
+    theme03 = document.querySelector(".theme-03"),
+    theme04 = document.querySelector(".theme-04"),
     themeBtn = document.querySelectorAll(".theme-btn");
 
     
@@ -81,12 +85,17 @@ modeBtn.onclick = function(){
     settings.classList.toggle("expanded");
 }
 
-themeBtn.forEach(element => {
-    element.onclick = changeThemeColor;
-});
 
-themeBtn[0].onclick = function(){
 
+theme01.onclick = function(){
+
+    metaThemeColor.setAttribute("content", this.getAttribute("data-theme"));
+    document.body.classList.remove("theme01-mod", "theme02-mod", "theme03-mod", "theme04-mod");
+    document.body.classList.add(this.getAttribute("data-color"));
+    pageMod = localStorage.setItem("pageColor", this.getAttribute("data-color"));
+    pageHeadTheme = localStorage.setItem("pageTheme", metaThemeColor.getAttribute("content"));
+
+    
     mobBImgLg.style.display = "block";
     mobRImgLg.style.display = "none";
     mobGreenImgLg.style.display = "none";
@@ -98,7 +107,14 @@ themeBtn[0].onclick = function(){
 
 }
 
-themeBtn[1].onclick = function(){
+
+theme02.onclick = function(){
+
+    metaThemeColor.setAttribute("content", this.getAttribute("data-theme"));
+    document.body.classList.remove("theme01-mod", "theme02-mod", "theme03-mod", "theme04-mod");
+    document.body.classList.add(this.getAttribute("data-color"));
+    pageMod = localStorage.setItem("pageColor", this.getAttribute("data-color"));
+    pageHeadTheme = localStorage.setItem("pageTheme", metaThemeColor.getAttribute("content"));
 
     mobBImgLg.style.display = "none";
     mobRImgLg.style.display = "block";
@@ -111,7 +127,13 @@ themeBtn[1].onclick = function(){
    
 }
 
-themeBtn[2].onclick = function(){
+theme03.onclick = function(){
+
+    metaThemeColor.setAttribute("content", this.getAttribute("data-theme"));
+    document.body.classList.remove("theme01-mod", "theme02-mod", "theme03-mod", "theme04-mod");
+    document.body.classList.add(this.getAttribute("data-color"));
+    pageMod = localStorage.setItem("pageColor", this.getAttribute("data-color"));
+    pageHeadTheme = localStorage.setItem("pageTheme", metaThemeColor.getAttribute("content"));
 
     mobBImgLg.style.display = "none";
     mobRImgLg.style.display = "none";
@@ -124,7 +146,13 @@ themeBtn[2].onclick = function(){
 
 }
 
-themeBtn[3].onclick = function(){
+theme04.onclick = function(){
+
+    metaThemeColor.setAttribute("content", this.getAttribute("data-theme"));
+    document.body.classList.remove("theme01-mod", "theme02-mod", "theme03-mod", "theme04-mod");
+    document.body.classList.add(this.getAttribute("data-color"));
+    pageMod = localStorage.setItem("pageColor", this.getAttribute("data-color"));
+    pageHeadTheme = localStorage.setItem("pageTheme", metaThemeColor.getAttribute("content"));
 
     mobBImgLg.style.display = "none";
     mobRImgLg.style.display = "none";
@@ -134,19 +162,5 @@ themeBtn[3].onclick = function(){
     mobRImgS.style.display = "none";
     mobGreenImgS.style.display = "none";
     mobGrayImgS.style.display = "block";
-
-}
-
-
-
-//  ===========   FUNCTIONS   =============  //
-
-function changeThemeColor() {
-
-    metaThemeColor.setAttribute("content", this.getAttribute("data-theme"));
-    document.body.classList.remove("theme01-mod", "theme02-mod", "theme03-mod", "theme04-mod");
-    document.body.classList.add(this.getAttribute("data-color"));
-    pageMod = localStorage.setItem("pageColor", this.getAttribute("data-color"));
-    pageHeadTheme = localStorage.setItem("pageTheme", metaThemeColor.getAttribute("content"));
 
 }
