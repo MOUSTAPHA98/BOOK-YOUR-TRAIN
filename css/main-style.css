@@ -25,7 +25,7 @@
     --fourth-color-transparent: #00496b30 ;
 }
 
-.blue-mod{
+.theme01-mod{
     --first-typing-color: #FFF ;
     --second-typing-color: #111 ;
     --third-typing-color: #004A6B ;
@@ -39,7 +39,7 @@
     --fourth-color-transparent: #004A6B30 ;
 }
 
-.red-mod{
+.theme02-mod{
     --first-typing-color: #FFF ;
     --second-typing-color: #111 ;
     --third-typing-color: #830209 ;
@@ -53,7 +53,7 @@
     --fourth-color-transparent: #83020930 ;
 }
 
-.green-mod{
+.theme03-mod{
     --first-typing-color: #FFF ;
     --second-typing-color: #111 ;
     --third-typing-color: #272F19 ;
@@ -67,7 +67,7 @@
     --fouth-color-transparent: #272F1930 ;
 }
 
-.gray-mod{
+.theme04-mod{
     --first-typing-color: #FFF ;
     --second-typing-color: #111 ;
     --third-typing-color: #151821 ;
@@ -101,7 +101,7 @@
                            SETTINGS
 =================================================================*/
 
-.settings{
+.theme-settings{
     position: fixed;
     left: 0;
     top: 50%;
@@ -110,7 +110,7 @@
     transition: ease-in-out .7s;
 }
 
-.colors{
+.themes{
     background-color: var(--first-typing-color);
     position: relative;
     display: flex;
@@ -121,7 +121,7 @@
 
 }
 
-.colors:after{
+.themes:after{
     color: var(--third-color);
     background-color: var(--first-typing-color);
     display: flex;
@@ -139,26 +139,26 @@
     cursor: pointer;
 }
 
-.blue, .red, .green, .gray{
+.theme-btn{
     margin: 5px;
     width: 30px;
     height: 30px;
     cursor: pointer;
 }
 
-.blue{
+.theme-01 {
     background-color: #004A6B;
 }
 
-.red{
+.theme-02{
     background-color: #830209;
 }
 
-.green{
+.theme-03{
     background-color: #272F19;
 }
 
-.gray{
+.theme-04{
     background-color: #151821;
 }
 
