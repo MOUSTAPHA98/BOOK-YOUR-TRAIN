@@ -74,10 +74,6 @@ var menuCloseBtn = document.getElementById("fa-times");
 /*   =====   CHANGE COLORS   =====   */
 
 var settings = document.querySelector(".theme-settings"),
-    theme01 = document.querySelector(".theme-01"),
-    theme02 = document.querySelector(".theme-02"),
-    theme03 = document.querySelector(".theme-03"),
-    theme04 = document.querySelector(".theme-04"),
     themeBtn = document.querySelectorAll(".theme-btn");
 
     
@@ -89,61 +85,57 @@ themeBtn.forEach(element => {
     element.onclick = changeThemeColor;
 });
 
-// theme01.onclick = function(){
-//     metaThemeColor.setAttribute("content","#004A6B");
+themeBtn[0].onclick = function(){
 
-//     mobBImgLg.style.display = "block";
-//     mobRImgLg.style.display = "none";
-//     mobGreenImgLg.style.display = "none";
-//     mobGrayImgLg.style.display = "none";
-//     mobBImgS.style.display = "block";
-//     mobRImgS.style.display = "none";
-//     mobGreenImgS.style.display = "none";
-//     mobGrayImgS.style.display = "none";
+    mobBImgLg.style.display = "block";
+    mobRImgLg.style.display = "none";
+    mobGreenImgLg.style.display = "none";
+    mobGrayImgLg.style.display = "none";
+    mobBImgS.style.display = "block";
+    mobRImgS.style.display = "none";
+    mobGreenImgS.style.display = "none";
+    mobGrayImgS.style.display = "none";
 
-// }
+}
 
-// theme02.onclick = function(){
-//     metaThemeColor.setAttribute("content","#830209");
+themeBtn[1].onclick = function(){
 
-//     mobBImgLg.style.display = "none";
-//     mobRImgLg.style.display = "block";
-//     mobGreenImgLg.style.display = "none";
-//     mobGrayImgLg.style.display = "none";
-//     mobBImgS.style.display = "none";
-//     mobRImgS.style.display = "block";
-//     mobGreenImgS.style.display = "none";
-//     mobGrayImgS.style.display = "none";
+    mobBImgLg.style.display = "none";
+    mobRImgLg.style.display = "block";
+    mobGreenImgLg.style.display = "none";
+    mobGrayImgLg.style.display = "none";
+    mobBImgS.style.display = "none";
+    mobRImgS.style.display = "block";
+    mobGreenImgS.style.display = "none";
+    mobGrayImgS.style.display = "none";
    
-// }
+}
 
-// theme03.onclick = function(){
-//     metaThemeColor.setAttribute("content","#272F19");
+themeBtn[2].onclick = function(){
 
-//     mobBImgLg.style.display = "none";
-//     mobRImgLg.style.display = "none";
-//     mobGreenImgLg.style.display = "block";
-//     mobGrayImgLg.style.display = "none";
-//     mobBImgS.style.display = "none";
-//     mobRImgS.style.display = "none";
-//     mobGreenImgS.style.display = "block";
-//     mobGrayImgS.style.display = "none";
+    mobBImgLg.style.display = "none";
+    mobRImgLg.style.display = "none";
+    mobGreenImgLg.style.display = "block";
+    mobGrayImgLg.style.display = "none";
+    mobBImgS.style.display = "none";
+    mobRImgS.style.display = "none";
+    mobGreenImgS.style.display = "block";
+    mobGrayImgS.style.display = "none";
 
-// }
+}
 
-// theme04.onclick = function(){
-//     metaThemeColor.setAttribute("content","#151821");
+themeBtn[3].onclick = function(){
 
-//     mobBImgLg.style.display = "none";
-//     mobRImgLg.style.display = "none";
-//     mobGreenImgLg.style.display = "none";
-//     mobGrayImgLg.style.display = "block";
-//     mobBImgS.style.display = "none";
-//     mobRImgS.style.display = "none";
-//     mobGreenImgS.style.display = "none";
-//     mobGrayImgS.style.display = "block";
+    mobBImgLg.style.display = "none";
+    mobRImgLg.style.display = "none";
+    mobGreenImgLg.style.display = "none";
+    mobGrayImgLg.style.display = "block";
+    mobBImgS.style.display = "none";
+    mobRImgS.style.display = "none";
+    mobGreenImgS.style.display = "none";
+    mobGrayImgS.style.display = "block";
 
-// }
+}
 
 
 
