@@ -58,8 +58,8 @@
 ===========================================================================-->
 
 <div class="menu" id="menu">
-    <div class="close">
-    <i class="fad fa-times" id="fa-times"></i>
+    <div class="menu-exit">
+        <i class="fad fa-times" id="fa-times"></i>
     </div>
     <ul class="menu-list">
         <li class="menu-item">
@@ -82,20 +82,20 @@
 
 
 <!--==========================================================================
-                                START MAIN NAVBAR
+                                 MAIN NAVBAR
 ===========================================================================-->
 
-    <nav class="navbar" id="mynav">
+    <nav class="navbar transparent" id="mynav">
         <div class="container">
             <div class="navbar-container animate-top-lazy">
 
-                <a href="index.html" class="brand-link">
+                <a class="brand-link" href="index.html" title="BOOK YOUR TRAIN">
                     <img src="images/logoWhite.svg" class="logo-with-name" alt="logo">
                     <img src="images/logoWhiteSmall.svg" class="small-logo" alt="logo" style="display: none;">
                 </a>
                 
 
-                <div>
+                <div class="nav">
                     <ul class="nav-list">
                         <li class="nav-item">
                             <a href="" class="nav-link active-lg">home</a>
@@ -115,18 +115,15 @@
                     </ul>
                 </div>
 
-                    <i class="fad fa-bars" id="fa-bars"></i>
+                <i class="fad fa-bars" id="fa-bars"></i>
+
             </div>
         </div>
     </nav>
 
-<!--==========================================================================
-                                END MAIN NAVBAR
-===========================================================================-->
-
 
 <!--==========================================================================
-                                START MAIN HERO
+                             MAIN HERO
 ===========================================================================-->
 
     <div class="hero">
@@ -223,10 +220,6 @@
             </div>
         </div>
     </div>
-
-<!--==========================================================================
-                                END MAIN HERO
-===========================================================================-->
 
 <!--==========================================================================
                                 START FEATURES SECTION
@@ -994,7 +987,6 @@
 
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
-<!-- Initialize Swiper -->
 <script>
     var swiper = new Swiper('.swiper-container', {
       effect: 'coverflow',
