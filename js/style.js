@@ -89,12 +89,6 @@ modeBtn.onclick = function(){
 
 theme01.onclick = function(){
 
-    metaThemeColor.setAttribute("content", this.getAttribute("data-theme"));
-    document.body.classList.remove("theme01-mod", "theme02-mod", "theme03-mod", "theme04-mod");
-    document.body.classList.add(this.getAttribute("data-color"));
-    pageMod = localStorage.setItem("pageColor", this.getAttribute("data-color"));
-    pageHeadTheme = localStorage.setItem("pageTheme", metaThemeColor.getAttribute("content"));
-
     
     mobBImgLg.style.display = "block";
     mobRImgLg.style.display = "none";
@@ -105,16 +99,18 @@ theme01.onclick = function(){
     mobGreenImgS.style.display = "none";
     mobGrayImgS.style.display = "none";
 
-}
-
-
-theme02.onclick = function(){
-
     metaThemeColor.setAttribute("content", this.getAttribute("data-theme"));
     document.body.classList.remove("theme01-mod", "theme02-mod", "theme03-mod", "theme04-mod");
     document.body.classList.add(this.getAttribute("data-color"));
     pageMod = localStorage.setItem("pageColor", this.getAttribute("data-color"));
     pageHeadTheme = localStorage.setItem("pageTheme", metaThemeColor.getAttribute("content"));
+
+}
+
+
+theme02.onclick = function(){
+
+    
 
     mobBImgLg.style.display = "none";
     mobRImgLg.style.display = "block";
@@ -124,17 +120,18 @@ theme02.onclick = function(){
     mobRImgS.style.display = "block";
     mobGreenImgS.style.display = "none";
     mobGrayImgS.style.display = "none";
-   
-}
-
-theme03.onclick = function(){
 
     metaThemeColor.setAttribute("content", this.getAttribute("data-theme"));
     document.body.classList.remove("theme01-mod", "theme02-mod", "theme03-mod", "theme04-mod");
     document.body.classList.add(this.getAttribute("data-color"));
     pageMod = localStorage.setItem("pageColor", this.getAttribute("data-color"));
     pageHeadTheme = localStorage.setItem("pageTheme", metaThemeColor.getAttribute("content"));
+   
+}
 
+theme03.onclick = function(){
+
+    
     mobBImgLg.style.display = "none";
     mobRImgLg.style.display = "none";
     mobGreenImgLg.style.display = "block";
@@ -144,15 +141,17 @@ theme03.onclick = function(){
     mobGreenImgS.style.display = "block";
     mobGrayImgS.style.display = "none";
 
-}
-
-theme04.onclick = function(){
-
     metaThemeColor.setAttribute("content", this.getAttribute("data-theme"));
     document.body.classList.remove("theme01-mod", "theme02-mod", "theme03-mod", "theme04-mod");
     document.body.classList.add(this.getAttribute("data-color"));
     pageMod = localStorage.setItem("pageColor", this.getAttribute("data-color"));
     pageHeadTheme = localStorage.setItem("pageTheme", metaThemeColor.getAttribute("content"));
+
+}
+
+theme04.onclick = function(){
+
+    
 
     mobBImgLg.style.display = "none";
     mobRImgLg.style.display = "none";
@@ -162,5 +161,11 @@ theme04.onclick = function(){
     mobRImgS.style.display = "none";
     mobGreenImgS.style.display = "none";
     mobGrayImgS.style.display = "block";
+
+    metaThemeColor.setAttribute("content", this.getAttribute("data-theme"));
+    document.body.classList.remove("theme01-mod", "theme02-mod", "theme03-mod", "theme04-mod");
+    document.body.classList.add(this.getAttribute("data-color"));
+    pageMod = localStorage.setItem("pageColor", this.getAttribute("data-color"));
+    pageHeadTheme = localStorage.setItem("pageTheme", metaThemeColor.getAttribute("content"));
 
 }
