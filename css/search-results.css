@@ -150,6 +150,84 @@ form input[type=Submit]{
 }
 
 
+.tickets-results-container{
+    padding: 80px 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: minmax(450px, auto);
+    grid-gap: 70px;
+
+}
+
+.tickets-filter{
+    padding: 25px;
+    height: 100%;
+    background-color: var(--second-typing-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.tickets-filter-heading span{
+    color: var(--first-typing-color);
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 18px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    padding-bottom: 20px;
+}
+
+
+.filter{
+    padding: 25px 0;
+}
+
+input[type="checkbox"]{
+    margin: 5px 10px 5px 0;
+    position: relative;
+    width: 30px;
+    height: 15px;
+    outline: none;
+    background-color: #FFF;
+    border-radius: 15px;
+    -webkit-appearance: none;
+    box-shadow: 0 0 15px inset rgba(0, 0, 0, .3);
+    transition: .8s;
+}
+
+input:checked[type="checkbox"]{
+    background-color: var(--first-color);
+}
+
+input[type="checkbox"]:before{
+    content: "";
+    width: 15px;
+    height: 15px;
+    background-color: var(--first-color);
+    border-radius: 50%;
+    left: 0;
+    top: 0;
+    position: absolute;
+    box-shadow: 0 0 60px rgba(0, 0, 0, .4);
+    transition: .8s;
+    transform: scale(1.1);
+}
+
+input:checked[type="checkbox"]::before{
+    left: 15px;
+    background-color: snow;
+}
+
+.check-btn{
+    padding: 7.5px 0;
+    color: var(--first-typing-color);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
 
 /*=================================================================
                         MEDIA QUERIES
