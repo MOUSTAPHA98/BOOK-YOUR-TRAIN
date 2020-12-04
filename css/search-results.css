@@ -186,7 +186,7 @@ form input[type=Submit]{
     text-transform: uppercase;
     position: relative;
     text-align: center;
-    padding: 50px 10%;
+    padding: 40px 10%;
     text-align: left;
 
 }
@@ -207,6 +207,10 @@ form input[type=Submit]{
 }
 .current-step.reversition-progress-step::after{
     background-color: var(--third-color);
+}
+
+.reversition-progress-step span{
+    display: none;
 }
 
 }
