@@ -131,7 +131,7 @@ form input[type=Submit]{
 
 .reversition-progress-step span{
     border: 2px solid var(--first-typing-color);
-    padding: 8px 12px;
+    padding: 8px 12.5px;
     border-radius: 50%;
     text-align: center;
     margin: 0 10px;
