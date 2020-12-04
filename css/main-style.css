@@ -494,7 +494,7 @@ img{
 }
 
 .nav-colored{
-    padding: 50px 0; 
+    padding: 15px 0; 
     position: fixed;
     background: linear-gradient( rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.75) 100% ), url(../images/b-pattern.png) !important;
 
@@ -1513,9 +1513,9 @@ form input[type=submit]:hover{
     .nav-list{
         display: none;
     }
-    .nav-colored{
+    /* .nav-colored{
         padding: 10px 0; 
-    }
+    } */
     .hero-container{
         display: grid;
         grid-template-columns: repeat(1,1fr);
