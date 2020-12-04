@@ -177,7 +177,6 @@ form input[type=Submit]{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* align-items: center; */
 }
 
 .reversition-progress-step{
@@ -212,5 +211,11 @@ form input[type=Submit]{
 .reversition-progress-step span{
     display: none;
 }
+
+.validation-step::after{
+    display: block;
+
+}
+
 
 }
