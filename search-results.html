@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="author" content="THEBES C.E Graduation Group 2021">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#004A6B">
+
+    <title>BOOOK YOUR TRAIN | Search Results</title>
+    
+    <link rel="icon" href="images/favicon.svg">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main-style.css">
+    <link rel="stylesheet" href="css/search-results.css">
+
+</head>
+
+
+
+<body>
+
+<!--==========================================================================
+                                PRELOAD
+===========================================================================-->
+
+    <div class="loader-wrapper">
+        <div id="loader" class="loader"></div>
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+    </div>
+
+
+<!--==========================================================================
+                                BACK TO TOP
+===========================================================================-->
+
+    <div class="back-to-top" onclick="topFunction()" id="myBtn" title="Back to top">
+        <i class="fad fa-chevron-double-up"></i>
+    </div>
+
+<!--==========================================================================
+                                SETTINGS
+===========================================================================-->
+
+    <div class="theme-settings">
+        <div class="themes" title="Theme-Color">
+            <div class="theme-btn theme-01" data-color="theme01-mod" data-theme="#004A6B"></div>
+            <div class="theme-btn theme-02" data-color="theme02-mod" data-theme="#830209"></div>
+            <div class="theme-btn theme-03" data-color="theme03-mod" data-theme="#272F19"></div>
+            <div class="theme-btn theme-04" data-color="theme04-mod" data-theme="#151821"></div>
+        </div>
+    </div>
+
+<!--==========================================================================
+                                MENU
+===========================================================================-->
+
+    <div class="menu" id="menu">
+        <div class="menu-exit">
+            <i class="fad fa-times" id="fa-times"></i>
+        </div>
+        <ul class="menu-list">
+            <li class="menu-item">
+                <a href="" class="menu-link active-s">home</a>
+            </li>
+            <li class="menu-item">
+                <a href="" class="menu-link">pages</a>
+            </li>
+            <li class="menu-item">
+                <a href="" class="menu-link">blog</a>
+            </li>
+            <li class="menu-item">
+                <a href="" class="menu-link">gallery</a>
+            </li>
+            <li class="menu-item">
+                <a href="" class="menu-link">about</a>
+            </li>
+        </ul>
+    </div>
+
+<!--==========================================================================
+                                 MAIN NAVBAR
+===========================================================================-->
+
+    <nav class="navbar transparent" id="mynav">
+        <div class="container">
+            <div class="navbar-container animate-top-lazy">
+
+                <a class="brand-link" href="index.html" title="BOOK YOUR TRAIN">
+                    <img src="images/logoWhite.svg" class="logo-with-name" alt="logo">
+                    <img src="images/logoWhiteSmall.svg" class="small-logo" alt="logo" style="display: none;">
+                </a>
+                
+
+                <div class="nav">
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a href="" class="nav-link active-lg">home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link">pages</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link">blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link">gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link">about</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <i class="fad fa-bars" id="fa-bars"></i>
+
+            </div>
+        </div>
+    </nav>
+
+<!--==========================================================================
+                             MAIN HERO
+===========================================================================-->
+
+    <div class="hero">
+        <div class="container">
+            <div class="hero-container">
+
+                <div class="booking-form animate-right-lazy">
+                    <form>
+
+                        <div class="stations">
+                            <div class="depart">
+                                <label>
+                                    Departure station
+                                </label>
+                                <select name="dep" id="departure-station">
+                                    <option value="0">----</option>
+                                    <option value="1">CITY1</option>
+                                    <option value="2">CITY2</option>
+                                    <option value="3">CITY3</option>
+                                    <option value="4">CITY4</option>
+                                </select>
+                            </div>
+
+                            <div class="arrival">
+                                <label>
+                                    Arrival station
+                                </label>
+                                <select name="arr" id="arrival-station">
+                                    <option value="0">----</option>
+                                    <option value="1">CITY1</option>
+                                    <option value="2">CITY2</option>
+                                    <option value="3">CITY3</option>
+                                    <option value="4">CITY4</option>
+                                </select>
+                            </div>
+                        </div>
+
+
+                        <div class="date">
+                            <div class="travelling-date">
+                                <label>
+                                    Travelling date
+                                </label>
+                                <input type="date">
+                            </div>
+                        </div>
+
+
+                        <div class="info">
+
+                            <div class="class">
+                                <label>
+                                    Class
+                                </label>
+                                <select name="class" id="travelling-class">
+                                    <option value="0">----</option>
+                                    <option value="1">CLASS1</option>
+                                    <option value="1">CLASS2</option>
+                                    <option value="1">CLASS3</option>
+                                    <option value="1">CLASS4</option>
+                                </select>
+                            </div>
+
+                            <div class="passengers">
+                                <label>
+                                    Passengers
+                                </label>
+                                <select name="passengers" id="travelling-passengers">
+                                    <option value="0">----</option>
+                                    <option value="1">1</option>
+                                    <option value="1">2</option>
+                                    <option value="1">3</option>
+                                    <option value="1">4</option>
+                                </select>
+                            </div>
+
+                            
+                        </div>
+
+                        <div class="submit-btn">
+                            <input type="submit" value="search tickets">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<!--==========================================================================
+                         REVERSITION PROGRESS SECTION
+===========================================================================-->
+
+    <section class="reversition-progress">
+        <div class="reversition-progress-container">
+            <div class="reversition-progress-step tickets-step current-step">
+                <span>1</span> Tickets
+            </div>
+            <div class="reversition-progress-step passengers-step">
+                <span>2</span>Passengers
+            </div>
+            <div class="reversition-progress-step payment-step">
+                <span>3</span> Payment
+            </div>
+            <div class="reversition-progress-step validation-step">
+                <span>4</span> validation
+            </div>
+        </div>
+    </section>
+
+<!--==========================================================================
+                         FOOTER SECTION
+===========================================================================-->
+
+    <!-- <div class="footer">
+        <div class="container">
+            <div class="footer-container">
+                <a href="index.html" class="brand-link" >
+                    <img src="images/logoWhite.svg" class="logo-with-name" alt="logo">
+                    <img src="images/logoWhiteSmall-v.svg" class="small-logo e-small" alt="logo" style="display: none;">
+                </a>
+                <div class="social-links">
+                    <a href=""><i class="fab fa-facebook-messenger"></i></a>
+                    <a href=""><i class="fab fa-whatsapp"></i></a>
+                    <a href=""><i class="fab fa-github"></i></a>
+                </div>
+                <p>
+                    made with <span> &#10084;&#65039; </span> by THEBES C.E 2021
+                </p>
+            </div>
+        </div>
+    </div> -->
+
+<!--==========================================================================
+                                    SCRIPTS
+===========================================================================-->
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="js/preload.js"></script>
+    <script src="js/style-search-results.js"></script>
+    <!-- <script src="js/animate.js"></script> -->
+
+</body>
+</html>

@@ -96,14 +96,6 @@ theme01.onclick = function(){
     pageHeadTheme = localStorage.setItem("pageTheme", metaThemeColor.getAttribute("content"));
 
     
-    mobBImgLg.style.display = "block";
-    mobRImgLg.style.display = "none";
-    mobGreenImgLg.style.display = "none";
-    mobGrayImgLg.style.display = "none";
-    mobBImgS.style.display = "block";
-    mobRImgS.style.display = "none";
-    mobGreenImgS.style.display = "none";
-    mobGrayImgS.style.display = "none";
 
 }
 
@@ -116,14 +108,6 @@ theme02.onclick = function(){
     pageMod = localStorage.setItem("pageColor", this.getAttribute("data-color"));
     pageHeadTheme = localStorage.setItem("pageTheme", metaThemeColor.getAttribute("content"));
 
-    mobBImgLg.style.display = "none";
-    mobRImgLg.style.display = "block";
-    mobGreenImgLg.style.display = "none";
-    mobGrayImgLg.style.display = "none";
-    mobBImgS.style.display = "none";
-    mobRImgS.style.display = "block";
-    mobGreenImgS.style.display = "none";
-    mobGrayImgS.style.display = "none";
    
 }
 
@@ -135,14 +119,6 @@ theme03.onclick = function(){
     pageMod = localStorage.setItem("pageColor", this.getAttribute("data-color"));
     pageHeadTheme = localStorage.setItem("pageTheme", metaThemeColor.getAttribute("content"));
 
-    mobBImgLg.style.display = "none";
-    mobRImgLg.style.display = "none";
-    mobGreenImgLg.style.display = "block";
-    mobGrayImgLg.style.display = "none";
-    mobBImgS.style.display = "none";
-    mobRImgS.style.display = "none";
-    mobGreenImgS.style.display = "block";
-    mobGrayImgS.style.display = "none";
 
 }
 
@@ -154,13 +130,5 @@ theme04.onclick = function(){
     pageMod = localStorage.setItem("pageColor", this.getAttribute("data-color"));
     pageHeadTheme = localStorage.setItem("pageTheme", metaThemeColor.getAttribute("content"));
 
-    mobBImgLg.style.display = "none";
-    mobRImgLg.style.display = "none";
-    mobGreenImgLg.style.display = "none";
-    mobGrayImgLg.style.display = "block";
-    mobBImgS.style.display = "none";
-    mobRImgS.style.display = "none";
-    mobGreenImgS.style.display = "none";
-    mobGrayImgS.style.display = "block";
 
 }
