@@ -154,7 +154,7 @@ form input[type=Submit]{
     padding: 80px 0;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: minmax(450px, auto);
+    grid-template-rows: minmax(auto);
     grid-gap: 70px;
 
 }
@@ -292,6 +292,15 @@ form input[type=Submit]{
 
 .validation-step::after{
     display: block;
+
+}
+
+.tickets-results-container{
+    padding: 80px 0;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: minmax(auto);
+    grid-gap: 70px;
 
 }
 
