@@ -204,7 +204,7 @@ input[type="checkbox"]:before{
     content: "";
     width: 15px;
     height: 15px;
-    background-color: var(--first-color);
+    background-color: var(--second-color-transparent);
     border-radius: 50%;
     left: 0;
     top: 0;
