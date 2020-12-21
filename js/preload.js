@@ -4,7 +4,7 @@ $(window).on('load', function(){
     document.body.classList.add(localStorage.getItem("pageColor"));
     metaThemeColor.setAttribute("content", localStorage.getItem("pageTheme"));
 
-   if (document.body.classList.contains("blue-mod")) {
+   if (document.body.classList.contains("theme01-mod")) {
        
         mobBImgLg.style.display = "block";
         mobRImgLg.style.display = "none";
@@ -17,7 +17,7 @@ $(window).on('load', function(){
    }
    else{}
 
-   if (document.body.classList.contains("red-mod")) {
+   if (document.body.classList.contains("theme02-mod")) {
        
         mobBImgLg.style.display = "none";
         mobRImgLg.style.display = "block";
@@ -31,7 +31,7 @@ $(window).on('load', function(){
     }
     else{}
 
-    if (document.body.classList.contains("green-mod")) {
+    if (document.body.classList.contains("theme03-mod")) {
        
         mobBImgLg.style.display = "none";
         mobRImgLg.style.display = "none";
@@ -45,7 +45,7 @@ $(window).on('load', function(){
     }
     else{}
 
-    if (document.body.classList.contains("gray-mod")) {
+    if (document.body.classList.contains("theme04-mod")) {
        
         mobBImgLg.style.display = "none";
         mobRImgLg.style.display = "none";
