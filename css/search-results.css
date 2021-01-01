@@ -70,10 +70,6 @@
     --fourth-color-transparent: #15182130 ;
 }
 
-body{
-    /* height: 10000px !important; */
-}
-
 .hero-container{
     grid-template-columns: repeat(1, 1fr);
     width: 100%;
@@ -173,7 +169,7 @@ form input[type=Submit]{
     justify-content: space-between;
 }
 
-.tickets-filter-heading span, .tickets-summery-heading span{
+.tickets-filter-heading span{
     color: var(--first-typing-color);
     display: block;
     text-align: center;

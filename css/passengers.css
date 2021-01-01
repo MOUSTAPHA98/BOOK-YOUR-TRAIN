@@ -1,0 +1,243 @@
+:root{
+    --first-typing-color: #FFF ;
+    --second-typing-color: #111 ;
+    --third-typing-color: #004A6B ;
+    --fourth-typing-color: #333 ;
+
+
+    --first-color: #00678D ;
+    --second-color: #00587C ;
+    --third-color: #004A6B;
+    --first-color-transparent: #00678D70;
+    --second-color-transparent: #00587Cd0 ;
+    --third-color-transparent: #004A6Be0 ;
+    --fourth-color-transparent: #00496b30 ;
+}
+
+.theme01-mod{
+    --first-typing-color: #FFF ;
+    --second-typing-color: #111 ;
+    --third-typing-color: #004A6B ;
+
+    --first-color: #00678D ;
+    --second-color: #00587C ;
+    --third-color: #004A6B;
+    --first-color-transparent: #00678D70;
+    --second-color-transparent: #00587Cd0 ;
+    --third-color-transparent: #004A6Be0 ;
+    --fourth-color-transparent: #004A6B30 ;
+}
+
+.theme02-mod{
+    --first-typing-color: #FFF ;
+    --second-typing-color: #111 ;
+    --third-typing-color: #830209 ;
+
+    --first-color: #830209 ;
+    --second-color: #95020B ;
+    --third-color: #830209;
+    --first-color-transparent: #83020970;
+    --second-color-transparent: #95020Bd0 ;
+    --third-color-transparent: #830209e0 ;
+    --fourth-color-transparent: #83020930 ;
+}
+
+.theme03-mod{
+    --first-typing-color: #FFF ;
+    --second-typing-color: #111 ;
+    --third-typing-color: #272F19 ;
+
+    --first-color: #41492F ;
+    --second-color: #313922 ;
+    --third-color: #272F19;
+    --first-color-transparent: #41492F70;
+    --second-color-transparent: #313922d0 ;
+    --third-color-transparent: #272F19e0 ;
+    --fouth-color-transparent: #272F1930 ;
+}
+
+.theme04-mod{
+    --first-typing-color: #FFF ;
+    --second-typing-color: #111 ;
+    --third-typing-color: #151821 ;
+
+    --first-color: #323A44 ;
+    --second-color: #232832 ;
+    --third-color: #151821;
+    --first-color-transparent: #323A4470;
+    --second-color-transparent: #232832d0 ;
+    --third-color-transparent: #151821e0 ;
+    --fourth-color-transparent: #15182130 ;
+}
+
+
+.passengers-entiry{
+    background: linear-gradient(to bottom, rgba(225, 225, 225, 0.7), rgba(80, 80, 80, 0.7)), url(../images/back-w.svg), center no-repeat;
+    background-size: cover;
+}
+
+.passengers-entiry-container{
+    padding: 80px 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 70px;
+}
+
+.summery{
+    padding: 25px;
+    height: 100%;
+    background-color: var(--second-typing-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-height: 1000px !important;
+}
+
+.summery-heading span{
+    color: var(--first-typing-color);
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 18px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    padding-bottom: 20px;
+}
+
+.train-summery, .passengers-summery, .baggage-summery{
+    color: var(--first-typing-color);
+}
+
+.train-summery-head, .passengers-summery-head, .baggage-summery-head{
+    text-transform: uppercase;
+    padding: 30px 0 !important;
+}
+
+.train-summery-head i, .passengers-summery-head i, .baggage-summery-head i {
+    font-size: 25px;
+    padding-right: 10px;
+}
+
+.ticket{
+    background-color: transparent !important;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: auto;
+    padding: 25px;
+    margin: 0;
+    align-items: flex-start;
+    border-radius: 10px;
+
+}
+
+.ticket:hover{
+    outline: 0;
+}
+
+.train-details{
+    width: 100%;
+    padding: 10px 0 !important;
+}
+
+.train-depart-details, .train-arrive-details{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.train-depart-time, .train-arrive-time{
+    display: flex;
+    flex-direction: row !important;
+}
+
+.train-details-number, .train-depart-time span, .train-arrive-time span, .train-depart-date span, .train-arrive-date span{
+    padding:  0 !important;
+    text-align: left !important;
+}
+
+.train-details,  .train-depart-details, .train-arrive-details{
+    padding: 10px 0;
+    justify-content: left ;
+    align-items: flex-start;
+    border: 0 !important;
+    text-align: left;
+}
+
+.train-depart-station,
+.train-arrive-station{
+    padding-top: 15px;
+
+}
+
+
+.train-details-name{
+    flex-direction: column-reverse !important;
+}
+
+.row{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+}
+
+
+
+.passengers-count, .baggage{
+    border: 1px solid rgba(0, 0, 0, 0.24);
+    box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    padding: 25px;
+}
+
+.adult-passengers, .child-passengers, .equipment, .excess, .animals{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 0;
+}
+
+.p-count{
+    padding-right: 5px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.p-t-price{
+    font-weight: bold;
+    font-size: 20px;
+    padding-left: 5px;
+}
+
+.summery-total{
+    padding: 25px 0 0 0;
+    background-color: var(--second-typing-color);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+
+}
+
+.summery-total span{
+    color: var(--first-color);
+    display: block;
+    text-transform: uppercase;
+    font-size: 25px;
+    padding-bottom: 20px;
+    font-weight: bold;
+}
+
+
+
+/*=================================================================
+                        MEDIA QUERIES
+=================================================================*/
+
+@media (max-width: 1024px){
+
+    .passengers-entiry-container{
+        grid-template-columns: repeat(1, 1fr);
+        order: 2;
+    }
+}
