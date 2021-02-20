@@ -233,10 +233,11 @@ input:checked[type="checkbox"]::before{
     border: 1px solid rgba(0, 0, 0, 0.24);
     grid-column: 2 / 4;
     padding: 25px 50px;
-    /* overflow-x: hidden; */
-    /* overflow-y: scroll ; */
-    /* max-height: 380px; */
-    display: grid;
+    overflow-x: hidden;
+    overflow-y: scroll ;
+    max-height: 650px;
+    display: flex;
+    flex-direction: column;
 }
 
 .no-tickets{

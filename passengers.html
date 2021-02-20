@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main-style.css">
-    <link rel="stylesheet" href="css/search-results.css">
+    <link rel="stylesheet" href="css/tickets.css">
     <link rel="stylesheet" href="css/passengers.css">
 
 </head>
@@ -219,7 +219,7 @@
 
     <section class="reversition-progress">
         <div class="reversition-progress-container">
-            <div class="reversition-progress-step tickets-step current-step">
+            <div class="reversition-progress-step tickets-step">
                 <span>1</span> Tickets
             </div>
             <div class="reversition-progress-step passengers-step current-step">
@@ -304,7 +304,7 @@
                                         </span>
                                     </div>
                                     <div class="train-arrive-station">
-                                        Los Angeles
+                                        L. Angeles
                                     </div>
                                     <div class="train-arrive-location">
                                         Union Station, CA
@@ -409,8 +409,298 @@
 
             </aside>
 
-            <div class="tickets-field animate-right">
-                
+            <div class="passengers-field animate-right">
+               
+               <!--   =========   Start Passenger info inputs   =========   -->
+               <div class="passenger-info-field">
+                <div class="row" style="display: flex; flex-direction: row; justify-content: space-between; align-items: center;">
+                    <span>
+                        Passenger 1
+                    </span>
+                    <a class="delete-passenger">
+                         <i class="fal fa-times"></i>
+                    </a>
+                </div>
+             <form class="passenger-info-form">
+                 <div class="row" style="display: flex; flex-direction: row; justify-content: space-between; align-items: center;">
+                      <div class="passenger-first-name " style="display: flex; flex-direction: column;">
+                          <label>
+                              First Name
+                          </label>
+                          <input type="text">
+                      </div>
+                      <div class="passenger-last-name " style="display: flex; flex-direction: column;">
+                          <label>
+                              Last Name
+                          </label>
+                          <input type="text">
+                      </div>
+                      <div class="passenger-first-name " style="display: flex; flex-direction: column;">
+                          <label>
+                              Age
+                          </label>
+                         <input type="text">
+                      </div>
+                 </div>
+                 <div class="row" style="display: flex; flex-direction: row; justify-content: space-between; align-items: center;">
+                      <div class="passenger-doc-type" style="display: flex; flex-direction: column;">
+                          <label>
+                              document type
+                          </label>
+                          <select name="doc-type">
+                              <option value="0">----</option>
+                              <option value="1">Passport</option>
+                              <option value="2">National ID</option>
+                          </select>
+                      </div>
+                      <div class="passenger-last-name " style="display: flex; flex-direction: column;">
+                          <label>
+                              Document number
+                          </label>
+                          <input type="text">
+                      </div>
+                      <div class="passenger-first-name " style="display: flex; flex-direction: column;">
+                          <label>
+                              citizenship
+                          </label>
+                      <input type="text">
+                      </div>
+                  </div>
+
+                  <div class="row" style="display: flex; flex-direction: row; justify-content: space-between; align-items: center;">
+                      <div class="passenger-baggage" style="display: flex; flex-direction: column;">
+                          <label>
+                              passenger baggage
+                          </label>
+                          <select name="pass-bag">
+                              <option value="0">0</option>
+                              <option value="1">1</option>
+                              <option value="2">2</option>
+                              <option value="3">3</option>
+                          </select>
+                      </div>
+                      <div class="passenger-baggage" style="display: flex; flex-direction: column;">
+                          <label>
+                              animals
+                          </label>
+                          <select name="pass-animals">
+                              <option value="0">0</option>
+                              <option value="1">1</option>
+                              <option value="2">2</option>
+                              <option value="3">3</option>
+                          </select>
+                      </div>
+                      <div class="passenger-baggage" style="display: flex; flex-direction: column;">
+                          <label>
+                              passenger equipment
+                          </label>
+                          <select name="pass-eauip">
+                              <option value="0">0</option>
+                              <option value="1">1</option>
+                              <option value="2">2</option>
+                              <option value="3">3</option>
+                          </select>
+                      </div>
+                  </div>
+             </form>
+        </div>
+        <!--   =========   End Passenger info inputs   =========   -->
+
+
+        <!--   =========   Start Passenger info inputs   =========   -->
+        <div class="passenger-info-field">
+            <div class="row" style="display: flex; flex-direction: row; justify-content: space-between; align-items: center;">
+                <span>
+                    Passenger 1
+                </span>
+                <a class="delete-passenger">
+                     <i class="fal fa-times"></i>
+                </a>
+            </div>
+         <form class="passenger-info-form">
+             <div class="row" style="display: flex; flex-direction: row; justify-content: space-between; align-items: center;">
+                  <div class="passenger-first-name " style="display: flex; flex-direction: column;">
+                      <label>
+                          First Name
+                      </label>
+                      <input type="text">
+                  </div>
+                  <div class="passenger-last-name " style="display: flex; flex-direction: column;">
+                      <label>
+                          Last Name
+                      </label>
+                      <input type="text">
+                  </div>
+                  <div class="passenger-first-name " style="display: flex; flex-direction: column;">
+                      <label>
+                          Age
+                      </label>
+                     <input type="text">
+                  </div>
+             </div>
+             <div class="row" style="display: flex; flex-direction: row; justify-content: space-between; align-items: center;">
+                  <div class="passenger-doc-type" style="display: flex; flex-direction: column;">
+                      <label>
+                          document type
+                      </label>
+                      <select name="doc-type">
+                          <option value="0">----</option>
+                          <option value="1">Passport</option>
+                          <option value="2">National ID</option>
+                      </select>
+                  </div>
+                  <div class="passenger-last-name " style="display: flex; flex-direction: column;">
+                      <label>
+                          Document number
+                      </label>
+                      <input type="text">
+                  </div>
+                  <div class="passenger-first-name " style="display: flex; flex-direction: column;">
+                      <label>
+                          citizenship
+                      </label>
+                  <input type="text">
+                  </div>
+              </div>
+
+              <div class="row" style="display: flex; flex-direction: row; justify-content: space-between; align-items: center;">
+                  <div class="passenger-baggage" style="display: flex; flex-direction: column;">
+                      <label>
+                          passenger baggage
+                      </label>
+                      <select name="pass-bag">
+                          <option value="0">0</option>
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                      </select>
+                  </div>
+                  <div class="passenger-baggage" style="display: flex; flex-direction: column;">
+                      <label>
+                          animals
+                      </label>
+                      <select name="pass-animals">
+                          <option value="0">0</option>
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                      </select>
+                  </div>
+                  <div class="passenger-baggage" style="display: flex; flex-direction: column;">
+                      <label>
+                          passenger equipment
+                      </label>
+                      <select name="pass-eauip">
+                          <option value="0">0</option>
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                      </select>
+                  </div>
+              </div>
+         </form>
+    </div>
+    <!--   =========   End Passenger info inputs   =========   -->
+
+
+    <!--   =========   Start Passenger info inputs   =========   -->
+    <div class="passenger-info-field">
+        <div class="row" style="display: flex; flex-direction: row; justify-content: space-between; align-items: center;">
+            <span>
+                Passenger 1
+            </span>
+            <a class="delete-passenger">
+                 <i class="fal fa-times"></i>
+            </a>
+        </div>
+     <form class="passenger-info-form">
+         <div class="row" style="display: flex; flex-direction: row; justify-content: space-between; align-items: center;">
+              <div class="passenger-first-name " style="display: flex; flex-direction: column;">
+                  <label>
+                      First Name
+                  </label>
+                  <input type="text">
+              </div>
+              <div class="passenger-last-name " style="display: flex; flex-direction: column;">
+                  <label>
+                      Last Name
+                  </label>
+                  <input type="text">
+              </div>
+              <div class="passenger-first-name " style="display: flex; flex-direction: column;">
+                  <label>
+                      Age
+                  </label>
+                 <input type="text">
+              </div>
+         </div>
+         <div class="row" style="display: flex; flex-direction: row; justify-content: space-between; align-items: center;">
+              <div class="passenger-doc-type" style="display: flex; flex-direction: column;">
+                  <label>
+                      document type
+                  </label>
+                  <select name="doc-type">
+                      <option value="0">----</option>
+                      <option value="1">Passport</option>
+                      <option value="2">National ID</option>
+                  </select>
+              </div>
+              <div class="passenger-last-name " style="display: flex; flex-direction: column;">
+                  <label>
+                      Document number
+                  </label>
+                  <input type="text">
+              </div>
+              <div class="passenger-first-name " style="display: flex; flex-direction: column;">
+                  <label>
+                      citizenship
+                  </label>
+              <input type="text">
+              </div>
+          </div>
+
+          <div class="row" style="display: flex; flex-direction: row; justify-content: space-between; align-items: center;">
+              <div class="passenger-baggage" style="display: flex; flex-direction: column;">
+                  <label>
+                      passenger baggage
+                  </label>
+                  <select name="pass-bag">
+                      <option value="0">0</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                  </select>
+              </div>
+              <div class="passenger-baggage" style="display: flex; flex-direction: column;">
+                  <label>
+                      animals
+                  </label>
+                  <select name="pass-animals">
+                      <option value="0">0</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                  </select>
+              </div>
+              <div class="passenger-baggage" style="display: flex; flex-direction: column;">
+                  <label>
+                      passenger equipment
+                  </label>
+                  <select name="pass-eauip">
+                      <option value="0">0</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                  </select>
+              </div>
+          </div>
+     </form>
+</div>
+<!--   =========   End Passenger info inputs   =========   -->
+
+
+
+             
             </div>
 
         </div>

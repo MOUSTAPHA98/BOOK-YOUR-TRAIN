@@ -72,7 +72,7 @@
 
 
 .passengers-entiry{
-    background: linear-gradient(to bottom, rgba(225, 225, 225, 0.7), rgba(80, 80, 80, 0.7)), url(../images/back-w.svg), center no-repeat;
+    /* background: linear-gradient(to bottom, rgba(225, 225, 225, 0.7), rgba(80, 80, 80, 0.7)), url(../images/back-w.svg), center no-repeat; */
     background-size: cover;
 }
 
@@ -216,7 +216,6 @@
     flex-direction: row;
     justify-content: space-between;
     border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-
 }
 
 .summery-total span{
@@ -226,6 +225,78 @@
     font-size: 25px;
     padding-bottom: 20px;
     font-weight: bold;
+}
+
+/****************************************************************************************
+*********************************************************************************************
+**********************************************************************************************/
+
+.passengers-field{
+    grid-column: 2 / 4;
+    display: flex;
+    flex-direction: column;
+    height: auto !important;
+}
+
+.passenger-info-field{
+    border: 1px solid rgba(0, 0, 0, 0.24);
+    padding: 25px;
+    margin-bottom:  50px;
+}
+
+.passenger-info-field > .row{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.24);
+    padding-bottom: 25px;
+    font-weight: 700;
+}
+
+.passenger-info-field > .row span{
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.delete-passenger,
+.delete-passenger:hover,
+.delete-passenger:focus{
+    outline: none;
+    border: 0;
+    box-shadow: 0;
+}
+
+.delete-passenger i{
+    color: red;
+}
+
+
+
+.passenger-info-form{
+    display: flex;
+    flex-direction: column;
+    padding: 25px 0;
+
+}
+
+.passenger-info-form input, .passenger-info-form select{
+    padding: 10px 15px;
+    margin: 5px 0;
+    outline: none;
+    font-weight: 700;
+    border-radius: 0;
+    border: 1px solid  rgba(0, 0, 0, 0.25);
+}
+
+.passenger-info-form select{
+    width: 200px;
+}
+
+.passenger-info-form label{
+   text-transform: capitalize;
+   font-weight: 500;
+}
+
+.passenger-info-form input[value=submit]{
+    align-self: flex-end !important;
+    padding: 15px 25px;
 }
 
 
